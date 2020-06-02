@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Verstoppertje_App
 {
-    public partial class Form1 : Form
+    public partial class login_Page : Form
     {
-        public Form1()
+        public login_Page()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
