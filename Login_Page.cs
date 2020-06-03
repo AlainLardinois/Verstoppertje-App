@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using Verstoppertje_App.DataAccessLayer;
-//using Verstoppertje_App.Model;
+using Verstoppertje_App.DataAccessLayer;
+using Verstoppertje_App.Model;
 
 
 namespace Verstoppertje_App
@@ -19,23 +19,24 @@ namespace Verstoppertje_App
         {
             InitializeComponent();
 
-            
-
         }
+
+        DAL myDAL = new DAL(); //Referentie naar Data Access Layer
 
         private void UserLogin_btn_Click(object sender, EventArgs e) //Open Main_page als Username + Wachtwoord Klopt. zo niet Error.
         {
-            string Username = this.userName_tBox.Text;
+            string GameName = this.userGameName_tBox.Text;
             string Password = this.userPassword_tBox.Text;
-            if (Username == Sql + Password == sql) //Referenctie naar DAL voor Wachtwoord ophalen uit DB)
+
+            try
             {
-                userMain_Page MainMenu = new userMain_Page();
-                MainMenu.Show();
-                login_Page.ActiveForm.Close();
+                myDAL.GetData();
+                User user = myDAL.users.Find(i => i.Nickname == GameName);
+                user.VerifyPassword(Password); // Might throw an error
             }
-            else
+            catch (UnauthorizedAccessException)
             {
-                MessageBox.Show("Waning", "Username or Password is incorrect please try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Waning", "Password is incorrect please try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

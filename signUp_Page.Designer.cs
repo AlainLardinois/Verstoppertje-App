@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.signUp_btn = new System.Windows.Forms.Button();
-            this.userName_tBox = new System.Windows.Forms.TextBox();
-            this.userName_Label = new System.Windows.Forms.Label();
             this.userGameName_label = new System.Windows.Forms.Label();
             this.userGameName_tBox = new System.Windows.Forms.TextBox();
             this.userPassword_label = new System.Windows.Forms.Label();
@@ -54,22 +52,6 @@
             this.signUp_btn.UseVisualStyleBackColor = true;
             this.signUp_btn.Click += new System.EventHandler(this.signUp_btn_Click);
             // 
-            // userName_tBox
-            // 
-            this.userName_tBox.Location = new System.Drawing.Point(87, 115);
-            this.userName_tBox.Name = "userName_tBox";
-            this.userName_tBox.Size = new System.Drawing.Size(165, 20);
-            this.userName_tBox.TabIndex = 1;
-            // 
-            // userName_Label
-            // 
-            this.userName_Label.AutoSize = true;
-            this.userName_Label.Location = new System.Drawing.Point(26, 118);
-            this.userName_Label.Name = "userName_Label";
-            this.userName_Label.Size = new System.Drawing.Size(55, 13);
-            this.userName_Label.TabIndex = 2;
-            this.userName_Label.Text = "Username";
-            // 
             // userGameName_label
             // 
             this.userGameName_label.AutoSize = true;
@@ -89,7 +71,7 @@
             // userPassword_label
             // 
             this.userPassword_label.AutoSize = true;
-            this.userPassword_label.Location = new System.Drawing.Point(28, 144);
+            this.userPassword_label.Location = new System.Drawing.Point(28, 118);
             this.userPassword_label.Name = "userPassword_label";
             this.userPassword_label.Size = new System.Drawing.Size(53, 13);
             this.userPassword_label.TabIndex = 5;
@@ -98,7 +80,7 @@
             // userEmail_label
             // 
             this.userEmail_label.AutoSize = true;
-            this.userEmail_label.Location = new System.Drawing.Point(49, 167);
+            this.userEmail_label.Location = new System.Drawing.Point(49, 141);
             this.userEmail_label.Name = "userEmail_label";
             this.userEmail_label.Size = new System.Drawing.Size(32, 13);
             this.userEmail_label.TabIndex = 6;
@@ -106,14 +88,14 @@
             // 
             // userPassword_tBox
             // 
-            this.userPassword_tBox.Location = new System.Drawing.Point(87, 141);
+            this.userPassword_tBox.Location = new System.Drawing.Point(87, 115);
             this.userPassword_tBox.Name = "userPassword_tBox";
             this.userPassword_tBox.Size = new System.Drawing.Size(165, 20);
             this.userPassword_tBox.TabIndex = 7;
             // 
             // userEmail_tBox
             // 
-            this.userEmail_tBox.Location = new System.Drawing.Point(87, 167);
+            this.userEmail_tBox.Location = new System.Drawing.Point(87, 141);
             this.userEmail_tBox.Name = "userEmail_tBox";
             this.userEmail_tBox.Size = new System.Drawing.Size(165, 20);
             this.userEmail_tBox.TabIndex = 8;
@@ -176,8 +158,6 @@
             this.Controls.Add(this.userPassword_label);
             this.Controls.Add(this.userGameName_tBox);
             this.Controls.Add(this.userGameName_label);
-            this.Controls.Add(this.userName_Label);
-            this.Controls.Add(this.userName_tBox);
             this.Controls.Add(this.signUp_btn);
             this.Name = "signUp_Page";
             this.Text = "Sign Up";
@@ -189,8 +169,6 @@
         #endregion
 
         private System.Windows.Forms.Button signUp_btn;
-        private System.Windows.Forms.TextBox userName_tBox;
-        private System.Windows.Forms.Label userName_Label;
         private System.Windows.Forms.Label userGameName_label;
         private System.Windows.Forms.TextBox userGameName_tBox;
         private System.Windows.Forms.Label userPassword_label;

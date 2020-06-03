@@ -20,7 +20,7 @@ namespace Verstoppertje_App
             
         }
 
-        DAL myDAL = new DAL();
+        DAL myDAL = new DAL(); //Referentie naar Data Access Layer
 
 
         private void signUp_btn_Click(object sender, EventArgs e)
@@ -28,12 +28,11 @@ namespace Verstoppertje_App
             string GameName = this.userGameName_tBox.Text;
             string FirstName = this.userFirstName_tBox.Text;
             string LastName = this.userLastName_tBox.Text;
-            string Username = this.userName_tBox.Text;
             string Password = this.userPassword_tBox.Text;
             string Email = this.userEmail_tBox.Text;
 
 
-            if ((GameName ?? Username ?? Password ?? Email) != null)
+            if ((GameName ?? FirstName ?? LastName ?? Password ?? Email) != null)
             {
                 User user = myDAL.users.Find(i => i.Nickname == GameName);
                 if (user == null)
@@ -42,7 +41,10 @@ namespace Verstoppertje_App
                 }
                 else
                 {
-                    User tempUser = new User(GameName, Username, Password, Email)
+                    myDAL.GetData();
+                    UserType type = myDAL.types.Find(i => i.Id == 1);
+                    myDAL.SaveUser(GameName, FirstName, LastName, type, Password, Email);
+                    signUp_Page.ActiveForm.Close();
                 }
 
             }
