@@ -39,6 +39,7 @@ namespace Verstoppertje_App.DataAccessLayer
                     UserType tempType = new UserType(reader.GetInt32(0), reader.GetString(1));
                     types.Add(tempType);
                 }
+                reader.Close();
                 cmd.Dispose();
                 // Get game roles
                 cmd = new SqlCommand(role_query, conn);
@@ -48,6 +49,7 @@ namespace Verstoppertje_App.DataAccessLayer
                     GameRole tempRole = new GameRole(reader.GetInt32(0), reader.GetString(1));
                     roles.Add(tempRole);
                 }
+                reader.Close();
                 cmd.Dispose();
                 // Get users
                 cmd = new SqlCommand(user_query, conn);
@@ -87,9 +89,11 @@ namespace Verstoppertje_App.DataAccessLayer
                         }
                         tempUser.Score += score;
                     }
+                    score_reader.Close();
                     score_cmd.Dispose();
                     users.Add(tempUser);
                 }
+                reader.Close();
                 cmd.Dispose();
             }
         }
