@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verstoppertje_App.Model;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace Verstoppertje_App.DataAccessLayer
 {
@@ -89,7 +90,7 @@ namespace Verstoppertje_App.DataAccessLayer
             }
         }
 
-        public int SaveScore(UserScore score)
+        public int SaveScore(bool _won, GameRole _role, int _score, User _user)
         {
             using (SqlConnection conn = new SqlConnection())
             {
@@ -97,17 +98,18 @@ namespace Verstoppertje_App.DataAccessLayer
                 conn.Open();
                 string query = "INSERT INTO user_score (won, role, score, user_id) VALUES (@won, @role, @score, @user_id)";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@won", score.Won);
-                cmd.Parameters.AddWithValue("@role", score.Role.Id);
-                cmd.Parameters.AddWithValue("@score", score.Score);
-                cmd.Parameters.AddWithValue("@user_id", score.User.Id);
+                cmd.Parameters.AddWithValue("@won", _won);
+                cmd.Parameters.AddWithValue("@role", _role.Id);
+                cmd.Parameters.AddWithValue("@score", _score);
+                cmd.Parameters.AddWithValue("@user_id", _user.Id);
                 int rows = cmd.ExecuteNonQuery();
                 cmd.Dispose();
+                this.GetData();
                 return rows;
             }
         }
 
-        public int SaveUser(User user)
+        public int SaveUser(string _nickname, string _firstname, string _lastname, UserType _type, string _password, string _email)
         {
             using (SqlConnection conn = new SqlConnection())
             {
@@ -115,14 +117,22 @@ namespace Verstoppertje_App.DataAccessLayer
                 conn.Open();
                 string query = "INSERT INTO game_user (nick_name, first_name, last_name, type, password, email) VALUES (@nickname, @firstname, @lastname, @type, @password, @email)";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@nickname", user.Nickname);
-                cmd.Parameters.AddWithValue("@firstname", user.First_name);
-                cmd.Parameters.AddWithValue("@lastname", user.Last_name);
-                cmd.Parameters.AddWithValue("@type", user.Type.Id);
-                cmd.Parameters.AddWithValue("@password", user.Password);
-                cmd.Parameters.AddWithValue("@email", user.Email);
+                cmd.Parameters.AddWithValue("@nickname", _nickname);
+                cmd.Parameters.AddWithValue("@firstname", _firstname);
+                cmd.Parameters.AddWithValue("@lastname", _lastname);
+                cmd.Parameters.AddWithValue("@type", _type.Id);
+                byte[] salt;
+                new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+                var pbkdf2 = new Rfc2898DeriveBytes(_password, salt, 10000);
+                byte[] hash = pbkdf2.GetBytes(20);
+                byte[] hashBytes = new byte[36];
+                Array.Copy(salt, 0, hashBytes, 0, 16);
+                Array.Copy(hash, 0, hashBytes, 16, 20);
+                cmd.Parameters.AddWithValue("@password", Convert.ToBase64String(hashBytes));
+                cmd.Parameters.AddWithValue("@email", _email);
                 int rows = cmd.ExecuteNonQuery();
                 cmd.Dispose();
+                this.GetData();
                 return rows;
             }
         }
