@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessLayer\DAL.cs" />
     <Compile Include="gameSettings_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,10 @@
     <Compile Include="login_Page.Designer.cs">
       <DependentUpon>login_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\GameRole.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserScore.cs" />
+    <Compile Include="Model\UserType.cs" />
     <Compile Include="signUp_Page.cs">
       <SubType>Form</SubType>
     </Compile>

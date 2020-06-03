@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using Verstoppertje-App.DataAccessLayer;
-//using Verstoppertje_App.Model;
+using Verstoppertje_App.DataAccessLayer;
+using Verstoppertje_App.Model;
 
 namespace Verstoppertje_App
 {
@@ -17,11 +17,17 @@ namespace Verstoppertje_App
         public signUp_Page()
         {
             InitializeComponent();
+            
         }
+
+        DAL myDAL = new DAL();
+
 
         private void signUp_btn_Click(object sender, EventArgs e)
         {
             string GameName = this.userGameName_tBox.Text;
+            string FirstName = this.userFirstName_tBox.Text;
+            string LastName = this.userLastName_tBox.Text;
             string Username = this.userName_tBox.Text;
             string Password = this.userPassword_tBox.Text;
             string Email = this.userEmail_tBox.Text;
@@ -29,7 +35,16 @@ namespace Verstoppertje_App
 
             if ((GameName ?? Username ?? Password ?? Email) != null)
             {
-                string nickname = DAL.users.Find(i => i.nickname == newNickName);
+                User user = myDAL.users.Find(i => i.Nickname == GameName);
+                if (user == null)
+                {
+                    MessageBox.Show("Waarschuwing", "Gebruik bestaad al", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    User tempUser = new User(GameName, Username, Password, Email)
+                }
+
             }
             else
             {

@@ -38,11 +38,15 @@
             this.userPassword_tBox = new System.Windows.Forms.TextBox();
             this.userEmail_tBox = new System.Windows.Forms.TextBox();
             this.exitMenu_btn = new System.Windows.Forms.Button();
+            this.firstName_label = new System.Windows.Forms.Label();
+            this.lastName_label = new System.Windows.Forms.Label();
+            this.userFirstName_tBox = new System.Windows.Forms.TextBox();
+            this.userLastName_tBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // signUp_btn
             // 
-            this.signUp_btn.Location = new System.Drawing.Point(269, 165);
+            this.signUp_btn.Location = new System.Drawing.Point(408, 204);
             this.signUp_btn.Name = "signUp_btn";
             this.signUp_btn.Size = new System.Drawing.Size(93, 42);
             this.signUp_btn.TabIndex = 0;
@@ -52,7 +56,7 @@
             // 
             // userName_tBox
             // 
-            this.userName_tBox.Location = new System.Drawing.Point(87, 63);
+            this.userName_tBox.Location = new System.Drawing.Point(87, 115);
             this.userName_tBox.Name = "userName_tBox";
             this.userName_tBox.Size = new System.Drawing.Size(165, 20);
             this.userName_tBox.TabIndex = 1;
@@ -60,7 +64,7 @@
             // userName_Label
             // 
             this.userName_Label.AutoSize = true;
-            this.userName_Label.Location = new System.Drawing.Point(15, 66);
+            this.userName_Label.Location = new System.Drawing.Point(26, 118);
             this.userName_Label.Name = "userName_Label";
             this.userName_Label.Size = new System.Drawing.Size(55, 13);
             this.userName_Label.TabIndex = 2;
@@ -85,7 +89,7 @@
             // userPassword_label
             // 
             this.userPassword_label.AutoSize = true;
-            this.userPassword_label.Location = new System.Drawing.Point(15, 89);
+            this.userPassword_label.Location = new System.Drawing.Point(28, 144);
             this.userPassword_label.Name = "userPassword_label";
             this.userPassword_label.Size = new System.Drawing.Size(53, 13);
             this.userPassword_label.TabIndex = 5;
@@ -94,7 +98,7 @@
             // userEmail_label
             // 
             this.userEmail_label.AutoSize = true;
-            this.userEmail_label.Location = new System.Drawing.Point(15, 116);
+            this.userEmail_label.Location = new System.Drawing.Point(49, 167);
             this.userEmail_label.Name = "userEmail_label";
             this.userEmail_label.Size = new System.Drawing.Size(32, 13);
             this.userEmail_label.TabIndex = 6;
@@ -102,21 +106,21 @@
             // 
             // userPassword_tBox
             // 
-            this.userPassword_tBox.Location = new System.Drawing.Point(87, 89);
+            this.userPassword_tBox.Location = new System.Drawing.Point(87, 141);
             this.userPassword_tBox.Name = "userPassword_tBox";
             this.userPassword_tBox.Size = new System.Drawing.Size(165, 20);
             this.userPassword_tBox.TabIndex = 7;
             // 
             // userEmail_tBox
             // 
-            this.userEmail_tBox.Location = new System.Drawing.Point(87, 116);
+            this.userEmail_tBox.Location = new System.Drawing.Point(87, 167);
             this.userEmail_tBox.Name = "userEmail_tBox";
             this.userEmail_tBox.Size = new System.Drawing.Size(165, 20);
             this.userEmail_tBox.TabIndex = 8;
             // 
             // exitMenu_btn
             // 
-            this.exitMenu_btn.Location = new System.Drawing.Point(170, 165);
+            this.exitMenu_btn.Location = new System.Drawing.Point(309, 204);
             this.exitMenu_btn.Name = "exitMenu_btn";
             this.exitMenu_btn.Size = new System.Drawing.Size(93, 42);
             this.exitMenu_btn.TabIndex = 9;
@@ -124,11 +128,47 @@
             this.exitMenu_btn.UseVisualStyleBackColor = true;
             this.exitMenu_btn.Click += new System.EventHandler(this.exitMenu_btn_Click);
             // 
+            // firstName_label
+            // 
+            this.firstName_label.AutoSize = true;
+            this.firstName_label.Location = new System.Drawing.Point(24, 66);
+            this.firstName_label.Name = "firstName_label";
+            this.firstName_label.Size = new System.Drawing.Size(57, 13);
+            this.firstName_label.TabIndex = 10;
+            this.firstName_label.Text = "First Name";
+            // 
+            // lastName_label
+            // 
+            this.lastName_label.AutoSize = true;
+            this.lastName_label.Location = new System.Drawing.Point(23, 92);
+            this.lastName_label.Name = "lastName_label";
+            this.lastName_label.Size = new System.Drawing.Size(58, 13);
+            this.lastName_label.TabIndex = 11;
+            this.lastName_label.Text = "Last Name";
+            // 
+            // userFirstName_tBox
+            // 
+            this.userFirstName_tBox.Location = new System.Drawing.Point(87, 63);
+            this.userFirstName_tBox.Name = "userFirstName_tBox";
+            this.userFirstName_tBox.Size = new System.Drawing.Size(165, 20);
+            this.userFirstName_tBox.TabIndex = 12;
+            // 
+            // userLastName_tBox
+            // 
+            this.userLastName_tBox.Location = new System.Drawing.Point(87, 89);
+            this.userLastName_tBox.Name = "userLastName_tBox";
+            this.userLastName_tBox.Size = new System.Drawing.Size(165, 20);
+            this.userLastName_tBox.TabIndex = 13;
+            // 
             // signUp_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 219);
+            this.ClientSize = new System.Drawing.Size(513, 258);
+            this.Controls.Add(this.userLastName_tBox);
+            this.Controls.Add(this.userFirstName_tBox);
+            this.Controls.Add(this.lastName_label);
+            this.Controls.Add(this.firstName_label);
             this.Controls.Add(this.exitMenu_btn);
             this.Controls.Add(this.userEmail_tBox);
             this.Controls.Add(this.userPassword_tBox);
@@ -158,5 +198,9 @@
         private System.Windows.Forms.TextBox userPassword_tBox;
         private System.Windows.Forms.TextBox userEmail_tBox;
         private System.Windows.Forms.Button exitMenu_btn;
+        private System.Windows.Forms.Label firstName_label;
+        private System.Windows.Forms.Label lastName_label;
+        private System.Windows.Forms.TextBox userFirstName_tBox;
+        private System.Windows.Forms.TextBox userLastName_tBox;
     }
 }
