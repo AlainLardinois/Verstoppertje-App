@@ -54,5 +54,10 @@ namespace Verstoppertje_App
         {
             
         }
+
+        private void exitGame_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

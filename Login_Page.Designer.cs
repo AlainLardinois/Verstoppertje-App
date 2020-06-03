@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login_Page));
             this.password_label = new System.Windows.Forms.Label();
             this.userPassword_tBox = new System.Windows.Forms.TextBox();
             this.rememberMe_cBox = new System.Windows.Forms.CheckBox();
@@ -37,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userGameName_label = new System.Windows.Forms.Label();
             this.userGameName_tBox = new System.Windows.Forms.TextBox();
+            this.exitGame_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +71,7 @@
             // UserLogin_btn
             // 
             this.UserLogin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserLogin_btn.Location = new System.Drawing.Point(687, 292);
+            this.UserLogin_btn.Location = new System.Drawing.Point(687, 244);
             this.UserLogin_btn.Name = "UserLogin_btn";
             this.UserLogin_btn.Size = new System.Drawing.Size(101, 44);
             this.UserLogin_btn.TabIndex = 5;
@@ -80,7 +82,7 @@
             // UserSignUp_btn
             // 
             this.UserSignUp_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserSignUp_btn.Location = new System.Drawing.Point(687, 342);
+            this.UserSignUp_btn.Location = new System.Drawing.Point(687, 294);
             this.UserSignUp_btn.Name = "UserSignUp_btn";
             this.UserSignUp_btn.Size = new System.Drawing.Size(101, 44);
             this.UserSignUp_btn.TabIndex = 6;
@@ -91,7 +93,7 @@
             // ForgotMyPass_btn
             // 
             this.ForgotMyPass_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ForgotMyPass_btn.Location = new System.Drawing.Point(687, 392);
+            this.ForgotMyPass_btn.Location = new System.Drawing.Point(687, 344);
             this.ForgotMyPass_btn.Name = "ForgotMyPass_btn";
             this.ForgotMyPass_btn.Size = new System.Drawing.Size(101, 44);
             this.ForgotMyPass_btn.TabIndex = 7;
@@ -101,9 +103,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(341, 12);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(345, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(447, 260);
+            this.pictureBox1.Size = new System.Drawing.Size(443, 226);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -123,11 +126,23 @@
             this.userGameName_tBox.Size = new System.Drawing.Size(151, 20);
             this.userGameName_tBox.TabIndex = 10;
             // 
+            // exitGame_btn
+            // 
+            this.exitGame_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitGame_btn.Location = new System.Drawing.Point(687, 394);
+            this.exitGame_btn.Name = "exitGame_btn";
+            this.exitGame_btn.Size = new System.Drawing.Size(101, 44);
+            this.exitGame_btn.TabIndex = 11;
+            this.exitGame_btn.Text = "Exit";
+            this.exitGame_btn.UseVisualStyleBackColor = true;
+            this.exitGame_btn.Click += new System.EventHandler(this.exitGame_btn_Click);
+            // 
             // login_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exitGame_btn);
             this.Controls.Add(this.userGameName_tBox);
             this.Controls.Add(this.userGameName_label);
             this.Controls.Add(this.pictureBox1);
@@ -155,5 +170,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label userGameName_label;
         private System.Windows.Forms.TextBox userGameName_tBox;
+        private System.Windows.Forms.Button exitGame_btn;
     }
 }
