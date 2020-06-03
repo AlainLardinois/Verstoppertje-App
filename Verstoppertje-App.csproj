@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login_Page.cs">
+    <Compile Include="gameSettings_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login_Page.Designer.cs">
-      <DependentUpon>Login_Page.cs</DependentUpon>
+    <Compile Include="gameSettings_Page.Designer.cs">
+      <DependentUpon>gameSettings_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_Page.Designer.cs">
+      <DependentUpon>login_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="signUp_Page.cs">
       <SubType>Form</SubType>
@@ -66,8 +72,23 @@
     <Compile Include="userMain_Page.Designer.cs">
       <DependentUpon>userMain_Page.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Login_Page.resx">
-      <DependentUpon>Login_Page.cs</DependentUpon>
+    <Compile Include="userProfile_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userProfile_Page.Designer.cs">
+      <DependentUpon>userProfile_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userShop_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userShop_Page.Designer.cs">
+      <DependentUpon>userShop_Page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="gameSettings_Page.resx">
+      <DependentUpon>gameSettings_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_Page.resx">
+      <DependentUpon>login_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="signUp_Page.resx">
       <DependentUpon>signUp_Page.cs</DependentUpon>
@@ -84,6 +105,12 @@
     <EmbeddedResource Include="userMain_Page.resx">
       <DependentUpon>userMain_Page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userProfile_Page.resx">
+      <DependentUpon>userProfile_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userShop_Page.resx">
+      <DependentUpon>userShop_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,8 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="API Domoticz\" />
-    <Folder Include="DAL\" />
-    <Folder Include="Forms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

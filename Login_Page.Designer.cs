@@ -28,101 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userLogin_btn = new System.Windows.Forms.Button();
-            this.userRegister_btn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.rememberMe_CBox = new System.Windows.Forms.CheckBox();
-            this.userName_label = new System.Windows.Forms.Label();
-            this.passWord_label = new System.Windows.Forms.Label();
-            this.passwordReset_btn = new System.Windows.Forms.Button();
+            this.username_label = new System.Windows.Forms.Label();
+            this.password_label = new System.Windows.Forms.Label();
+            this.userName_tBox = new System.Windows.Forms.TextBox();
+            this.userPassword_tBox = new System.Windows.Forms.TextBox();
+            this.rememberMe_cBox = new System.Windows.Forms.CheckBox();
+            this.UserLogin_btn = new System.Windows.Forms.Button();
+            this.UserSignUp_btn = new System.Windows.Forms.Button();
+            this.ForgotMyPass_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // userLogin_btn
+            // username_label
             // 
-            this.userLogin_btn.Location = new System.Drawing.Point(290, 121);
-            this.userLogin_btn.Name = "userLogin_btn";
-            this.userLogin_btn.Size = new System.Drawing.Size(112, 23);
-            this.userLogin_btn.TabIndex = 0;
-            this.userLogin_btn.Text = "Login";
-            this.userLogin_btn.UseVisualStyleBackColor = true;
+            this.username_label.AutoSize = true;
+            this.username_label.Location = new System.Drawing.Point(18, 41);
+            this.username_label.Name = "username_label";
+            this.username_label.Size = new System.Drawing.Size(55, 13);
+            this.username_label.TabIndex = 0;
+            this.username_label.Text = "Username";
             // 
-            // userRegister_btn
+            // password_label
             // 
-            this.userRegister_btn.Location = new System.Drawing.Point(290, 150);
-            this.userRegister_btn.Name = "userRegister_btn";
-            this.userRegister_btn.Size = new System.Drawing.Size(112, 23);
-            this.userRegister_btn.TabIndex = 1;
-            this.userRegister_btn.Text = "Sign Up";
-            this.userRegister_btn.UseVisualStyleBackColor = true;
+            this.password_label.AutoSize = true;
+            this.password_label.Location = new System.Drawing.Point(18, 71);
+            this.password_label.Name = "password_label";
+            this.password_label.Size = new System.Drawing.Size(53, 13);
+            this.password_label.TabIndex = 1;
+            this.password_label.Text = "Password";
             // 
-            // textBox1
+            // userName_tBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
-            this.textBox1.TabIndex = 2;
+            this.userName_tBox.Location = new System.Drawing.Point(85, 42);
+            this.userName_tBox.Name = "userName_tBox";
+            this.userName_tBox.Size = new System.Drawing.Size(100, 20);
+            this.userName_tBox.TabIndex = 2;
             // 
-            // textBox2
+            // userPassword_tBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(72, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 20);
-            this.textBox2.TabIndex = 3;
+            this.userPassword_tBox.Location = new System.Drawing.Point(85, 68);
+            this.userPassword_tBox.Name = "userPassword_tBox";
+            this.userPassword_tBox.Size = new System.Drawing.Size(100, 20);
+            this.userPassword_tBox.TabIndex = 3;
             // 
-            // rememberMe_CBox
+            // rememberMe_cBox
             // 
-            this.rememberMe_CBox.AutoSize = true;
-            this.rememberMe_CBox.Location = new System.Drawing.Point(72, 82);
-            this.rememberMe_CBox.Name = "rememberMe_CBox";
-            this.rememberMe_CBox.Size = new System.Drawing.Size(95, 17);
-            this.rememberMe_CBox.TabIndex = 4;
-            this.rememberMe_CBox.Text = "Remember Me";
-            this.rememberMe_CBox.UseVisualStyleBackColor = true;
+            this.rememberMe_cBox.AutoSize = true;
+            this.rememberMe_cBox.Location = new System.Drawing.Point(85, 95);
+            this.rememberMe_cBox.Name = "rememberMe_cBox";
+            this.rememberMe_cBox.Size = new System.Drawing.Size(95, 17);
+            this.rememberMe_cBox.TabIndex = 4;
+            this.rememberMe_cBox.Text = "Remember Me";
+            this.rememberMe_cBox.UseVisualStyleBackColor = true;
             // 
-            // userName_label
+            // UserLogin_btn
             // 
-            this.userName_label.AutoSize = true;
-            this.userName_label.Location = new System.Drawing.Point(11, 33);
-            this.userName_label.Name = "userName_label";
-            this.userName_label.Size = new System.Drawing.Size(55, 13);
-            this.userName_label.TabIndex = 5;
-            this.userName_label.Text = "Username";
+            this.UserLogin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserLogin_btn.Location = new System.Drawing.Point(687, 292);
+            this.UserLogin_btn.Name = "UserLogin_btn";
+            this.UserLogin_btn.Size = new System.Drawing.Size(101, 44);
+            this.UserLogin_btn.TabIndex = 5;
+            this.UserLogin_btn.Text = "Login";
+            this.UserLogin_btn.UseVisualStyleBackColor = true;
+            this.UserLogin_btn.Click += new System.EventHandler(this.UserLogin_btn_Click);
             // 
-            // passWord_label
+            // UserSignUp_btn
             // 
-            this.passWord_label.AutoSize = true;
-            this.passWord_label.Location = new System.Drawing.Point(13, 59);
-            this.passWord_label.Name = "passWord_label";
-            this.passWord_label.Size = new System.Drawing.Size(53, 13);
-            this.passWord_label.TabIndex = 6;
-            this.passWord_label.Text = "Password";
+            this.UserSignUp_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserSignUp_btn.Location = new System.Drawing.Point(687, 342);
+            this.UserSignUp_btn.Name = "UserSignUp_btn";
+            this.UserSignUp_btn.Size = new System.Drawing.Size(101, 44);
+            this.UserSignUp_btn.TabIndex = 6;
+            this.UserSignUp_btn.Text = "Sign Up";
+            this.UserSignUp_btn.UseVisualStyleBackColor = true;
+            this.UserSignUp_btn.Click += new System.EventHandler(this.UserSignUp_btn_Click);
             // 
-            // passwordReset_btn
+            // ForgotMyPass_btn
             // 
-            this.passwordReset_btn.Location = new System.Drawing.Point(290, 179);
-            this.passwordReset_btn.Name = "passwordReset_btn";
-            this.passwordReset_btn.Size = new System.Drawing.Size(112, 23);
-            this.passwordReset_btn.TabIndex = 7;
-            this.passwordReset_btn.Text = "Forgot my Password";
-            this.passwordReset_btn.UseVisualStyleBackColor = true;
+            this.ForgotMyPass_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ForgotMyPass_btn.Location = new System.Drawing.Point(687, 392);
+            this.ForgotMyPass_btn.Name = "ForgotMyPass_btn";
+            this.ForgotMyPass_btn.Size = new System.Drawing.Size(101, 44);
+            this.ForgotMyPass_btn.TabIndex = 7;
+            this.ForgotMyPass_btn.Text = "Forgot my Password";
+            this.ForgotMyPass_btn.UseVisualStyleBackColor = true;
+            this.ForgotMyPass_btn.Click += new System.EventHandler(this.ForgotMyPass_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(341, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(447, 260);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // login_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 214);
-            this.Controls.Add(this.passwordReset_btn);
-            this.Controls.Add(this.passWord_label);
-            this.Controls.Add(this.userName_label);
-            this.Controls.Add(this.rememberMe_CBox);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.userRegister_btn);
-            this.Controls.Add(this.userLogin_btn);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ForgotMyPass_btn);
+            this.Controls.Add(this.UserSignUp_btn);
+            this.Controls.Add(this.UserLogin_btn);
+            this.Controls.Add(this.rememberMe_cBox);
+            this.Controls.Add(this.userPassword_tBox);
+            this.Controls.Add(this.userName_tBox);
+            this.Controls.Add(this.password_label);
+            this.Controls.Add(this.username_label);
             this.Name = "login_Page";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,14 +147,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button userLogin_btn;
-        private System.Windows.Forms.Button userRegister_btn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox rememberMe_CBox;
-        private System.Windows.Forms.Label userName_label;
-        private System.Windows.Forms.Label passWord_label;
-        private System.Windows.Forms.Button passwordReset_btn;
+        private System.Windows.Forms.Label username_label;
+        private System.Windows.Forms.Label password_label;
+        private System.Windows.Forms.TextBox userName_tBox;
+        private System.Windows.Forms.TextBox userPassword_tBox;
+        private System.Windows.Forms.CheckBox rememberMe_cBox;
+        private System.Windows.Forms.Button UserLogin_btn;
+        private System.Windows.Forms.Button UserSignUp_btn;
+        private System.Windows.Forms.Button ForgotMyPass_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
-
