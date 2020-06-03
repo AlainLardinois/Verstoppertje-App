@@ -36,7 +36,11 @@ namespace Verstoppertje_App
             }
             catch (UnauthorizedAccessException)
             {
-                MessageBox.Show("Waning", "Password is incorrect please try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Password is incorrect please try again", "Waning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Game Name Doesn't exist try again ", "Waning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

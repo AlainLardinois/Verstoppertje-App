@@ -32,25 +32,28 @@ namespace Verstoppertje_App
             string Email = this.userEmail_tBox.Text;
 
 
+
+
+
+
             if ((GameName ?? FirstName ?? LastName ?? Password ?? Email) != null)
             {
                 User user = myDAL.users.Find(i => i.Nickname == GameName);
                 if (user == null)
-                {
-                    MessageBox.Show("Waarschuwing", "Gebruik bestaad al", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
                 {
                     myDAL.GetData();
                     UserType type = myDAL.types.Find(i => i.Id == 1);
                     myDAL.SaveUser(GameName, FirstName, LastName, type, Password, Email);
                     signUp_Page.ActiveForm.Close();
                 }
-
+                else
+                {
+                    MessageBox.Show("User already exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Waarschuwing", "u heeft niet alle gegevens ingevuld", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Not all fields have been filled", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }      
         }
 
