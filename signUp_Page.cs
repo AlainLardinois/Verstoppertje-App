@@ -35,7 +35,6 @@ namespace Verstoppertje_App
             if (!textBoxes.Any(s => String.IsNullOrEmpty(s)))
             {
                 User user = myDAL.users.Find(i => i.Nickname == textBoxes[0]);
-                Console.WriteLine(user);
                 if (user != null)
                 {
                     MessageBox.Show("User already exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -46,10 +45,6 @@ namespace Verstoppertje_App
                     UserType type = myDAL.types.Find(i => i.Id == 1);
                     myDAL.SaveUser(textBoxes[0], textBoxes[1], textBoxes[2], type, textBoxes[3], textBoxes[4]);
                     signUp_Page.ActiveForm.Close();
-                }
-                else
-                {
-                    MessageBox.Show("User already exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
