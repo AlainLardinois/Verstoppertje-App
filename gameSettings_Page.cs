@@ -24,5 +24,10 @@ namespace Verstoppertje_App
             MainMenu.Closed += (s, args) => this.Close();
             MainMenu.Show();
         }
+
+        private void startGame_btn_Click(object sender, EventArgs e)
+        {
+            mainGame_panel.Show()
+        }
     }
 }

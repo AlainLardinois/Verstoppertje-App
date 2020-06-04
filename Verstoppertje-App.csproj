@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessLayer\DAL.cs" />
+    <Compile Include="gameFloorPlan_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gameFloorPlan_UserControl.Designer.cs">
+      <DependentUpon>gameFloorPlan_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="gameSettings_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="userShop_Page.Designer.cs">
       <DependentUpon>userShop_Page.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="gameFloorPlan_UserControl.resx">
+      <DependentUpon>gameFloorPlan_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gameSettings_Page.resx">
       <DependentUpon>gameSettings_Page.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="userMain_Page.resx">
       <DependentUpon>userMain_Page.cs</DependentUpon>
@@ -131,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="API Domoticz\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\maxresdefault2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\MrProg_Icon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

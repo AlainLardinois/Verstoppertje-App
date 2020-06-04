@@ -35,11 +35,11 @@
             this.userFirstName_tBox = new System.Windows.Forms.TextBox();
             this.userProfileEmail_label = new System.Windows.Forms.Label();
             this.UserProfileEmail_tBox = new System.Windows.Forms.TextBox();
-            this.UserProfilePic_pictureBox = new System.Windows.Forms.PictureBox();
             this.pictureUpload_btn = new System.Windows.Forms.Button();
             this.editProfile_btn = new System.Windows.Forms.Button();
             this.userLastName_tBox = new System.Windows.Forms.TextBox();
             this.userLastName_label = new System.Windows.Forms.Label();
+            this.UserProfilePic_pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.UserProfilePic_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,17 +101,9 @@
             this.UserProfileEmail_tBox.Size = new System.Drawing.Size(100, 20);
             this.UserProfileEmail_tBox.TabIndex = 7;
             // 
-            // UserProfilePic_pictureBox
-            // 
-            this.UserProfilePic_pictureBox.Location = new System.Drawing.Point(561, 21);
-            this.UserProfilePic_pictureBox.Name = "UserProfilePic_pictureBox";
-            this.UserProfilePic_pictureBox.Size = new System.Drawing.Size(214, 194);
-            this.UserProfilePic_pictureBox.TabIndex = 8;
-            this.UserProfilePic_pictureBox.TabStop = false;
-            // 
             // pictureUpload_btn
             // 
-            this.pictureUpload_btn.Location = new System.Drawing.Point(700, 221);
+            this.pictureUpload_btn.Location = new System.Drawing.Point(700, 270);
             this.pictureUpload_btn.Name = "pictureUpload_btn";
             this.pictureUpload_btn.Size = new System.Drawing.Size(75, 23);
             this.pictureUpload_btn.TabIndex = 9;
@@ -142,6 +134,15 @@
             this.userLastName_label.Size = new System.Drawing.Size(58, 13);
             this.userLastName_label.TabIndex = 11;
             this.userLastName_label.Text = "Last Name";
+            // 
+            // UserProfilePic_pictureBox
+            // 
+            this.UserProfilePic_pictureBox.Image = global::Verstoppertje_App.Properties.Resources.MrProg_Icon;
+            this.UserProfilePic_pictureBox.Location = new System.Drawing.Point(559, 21);
+            this.UserProfilePic_pictureBox.Name = "UserProfilePic_pictureBox";
+            this.UserProfilePic_pictureBox.Size = new System.Drawing.Size(216, 243);
+            this.UserProfilePic_pictureBox.TabIndex = 8;
+            this.UserProfilePic_pictureBox.TabStop = false;
             // 
             // userProfile_Page
             // 

@@ -35,7 +35,7 @@
             this.difficulty_label = new System.Windows.Forms.Label();
             this.difficulty_comboBox = new System.Windows.Forms.ComboBox();
             this.returnMain_btn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.mainGame_panel = new System.Windows.Forms.Panel();
             this.startGame_btn = new System.Windows.Forms.Button();
             this.endGame_btn = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -105,12 +105,13 @@
             this.returnMain_btn.UseVisualStyleBackColor = true;
             this.returnMain_btn.Click += new System.EventHandler(this.returnMain_btn_Click);
             // 
-            // panel1
+            // mainGame_panel
             // 
-            this.panel1.Location = new System.Drawing.Point(224, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(588, 393);
-            this.panel1.TabIndex = 7;
+            this.mainGame_panel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.mainGame_panel.Location = new System.Drawing.Point(224, 28);
+            this.mainGame_panel.Name = "mainGame_panel";
+            this.mainGame_panel.Size = new System.Drawing.Size(588, 393);
+            this.mainGame_panel.TabIndex = 7;
             // 
             // startGame_btn
             // 
@@ -121,6 +122,7 @@
             this.startGame_btn.TabIndex = 8;
             this.startGame_btn.Text = "Start Game";
             this.startGame_btn.UseVisualStyleBackColor = true;
+            this.startGame_btn.Click += new System.EventHandler(this.startGame_btn_Click);
             // 
             // endGame_btn
             // 
@@ -165,7 +167,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.endGame_btn);
             this.Controls.Add(this.startGame_btn);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.mainGame_panel);
             this.Controls.Add(this.returnMain_btn);
             this.Name = "gameSettings_Page";
             this.Text = "Game settings";
@@ -184,7 +186,7 @@
         private System.Windows.Forms.Label difficulty_label;
         private System.Windows.Forms.ComboBox difficulty_comboBox;
         private System.Windows.Forms.Button returnMain_btn;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel mainGame_panel;
         private System.Windows.Forms.Button startGame_btn;
         private System.Windows.Forms.Button endGame_btn;
         private System.Windows.Forms.RichTextBox richTextBox1;
