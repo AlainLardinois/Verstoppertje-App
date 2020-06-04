@@ -37,6 +37,10 @@ namespace Verstoppertje_App
                     User user = myDAL.users.Find(i => i.Nickname == textBoxes[0]);
                     user.VerifyPassword(textBoxes[1]);
                     MessageBox.Show("Your password is correct!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    userMain_Page MainMenu = new userMain_Page();
+                    MainMenu.Closed += (s, args) => this.Close();
+                    MainMenu.Show();
                 }
                 catch (UnauthorizedAccessException)
                 {
