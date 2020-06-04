@@ -47,7 +47,10 @@ namespace Verstoppertje_App
                     myDAL.SaveUser(textBoxes[0], textBoxes[1], textBoxes[2], type, textBoxes[3], textBoxes[4]);
                     signUp_Page.ActiveForm.Close();
                 }
-
+                else
+                {
+                    MessageBox.Show("User already exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {

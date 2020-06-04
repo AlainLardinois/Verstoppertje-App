@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login_Page));
             this.password_label = new System.Windows.Forms.Label();
             this.userPassword_tBox = new System.Windows.Forms.TextBox();
             this.rememberMe_cBox = new System.Windows.Forms.CheckBox();
@@ -37,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userGameName_label = new System.Windows.Forms.Label();
             this.userGameName_tBox = new System.Windows.Forms.TextBox();
+            this.exitGame_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,6 +134,17 @@
             this.userGameName_tBox.Size = new System.Drawing.Size(200, 22);
             this.userGameName_tBox.TabIndex = 1;
             // 
+            // exitGame_btn
+            // 
+            this.exitGame_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitGame_btn.Location = new System.Drawing.Point(687, 394);
+            this.exitGame_btn.Name = "exitGame_btn";
+            this.exitGame_btn.Size = new System.Drawing.Size(101, 44);
+            this.exitGame_btn.TabIndex = 11;
+            this.exitGame_btn.Text = "Exit";
+            this.exitGame_btn.UseVisualStyleBackColor = true;
+            this.exitGame_btn.Click += new System.EventHandler(this.exitGame_btn_Click);
+            // 
             // login_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,5 +178,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label userGameName_label;
         private System.Windows.Forms.TextBox userGameName_tBox;
+        private System.Windows.Forms.Button exitGame_btn;
     }
 }
