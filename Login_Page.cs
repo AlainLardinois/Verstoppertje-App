@@ -25,18 +25,31 @@ namespace Verstoppertje_App
 
         private void UserLogin_btn_Click(object sender, EventArgs e) //Open Main_page als Username + Wachtwoord Klopt. zo niet Error.
         {
-            string GameName = this.userGameName_tBox.Text;
-            string Password = this.userPassword_tBox.Text;
+            List<String> textBoxes = new List<string>();
+            textBoxes.Add(this.userGameName_tBox.Text);
+            textBoxes.Add(this.userPassword_tBox.Text);
 
-            try
+            if (!textBoxes.Any(s => String.IsNullOrEmpty(s)))
             {
-                myDAL.GetData();
-                User user = myDAL.users.Find(i => i.Nickname == GameName);
-                user.VerifyPassword(Password); // Might throw an error
+                try
+                {
+                    myDAL.GetData();
+                    User user = myDAL.users.Find(i => i.Nickname == textBoxes[0]);
+                    user.VerifyPassword(textBoxes[1]);
+                    MessageBox.Show("Your password is correct!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (UnauthorizedAccessException)
+                {
+                    MessageBox.Show("Your password is incorrect, please try again", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (NullReferenceException)
+                {
+                    MessageBox.Show("That username doesn't exist, please try again", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (UnauthorizedAccessException)
+            else
             {
-                MessageBox.Show("Waning", "Password is incorrect please try again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You have to fill all the fields", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
