@@ -78,6 +78,7 @@
             this.returnMain_btn.TabIndex = 4;
             this.returnMain_btn.Text = "Return";
             this.returnMain_btn.UseVisualStyleBackColor = true;
+            this.returnMain_btn.Click += new System.EventHandler(this.returnMain_btn_Click);
             // 
             // buyPowerUp1_btn
             // 

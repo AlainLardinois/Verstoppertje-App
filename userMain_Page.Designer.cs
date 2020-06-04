@@ -56,6 +56,7 @@
             this.playGame_btn.TabIndex = 1;
             this.playGame_btn.Text = "Play Game";
             this.playGame_btn.UseVisualStyleBackColor = true;
+            this.playGame_btn.Click += new System.EventHandler(this.playGame_btn_Click);
             // 
             // exitGame_btn
             // 
@@ -66,6 +67,7 @@
             this.exitGame_btn.TabIndex = 2;
             this.exitGame_btn.Text = "Exit Game";
             this.exitGame_btn.UseVisualStyleBackColor = true;
+            this.exitGame_btn.Click += new System.EventHandler(this.exitGame_btn_Click);
             // 
             // itemShop_btn
             // 
@@ -76,6 +78,7 @@
             this.itemShop_btn.TabIndex = 3;
             this.itemShop_btn.Text = "Shop";
             this.itemShop_btn.UseVisualStyleBackColor = true;
+            this.itemShop_btn.Click += new System.EventHandler(this.itemShop_btn_Click);
             // 
             // leaderBord_btn
             // 
@@ -96,6 +99,7 @@
             this.myProfile_btn.TabIndex = 6;
             this.myProfile_btn.Text = "My Profile";
             this.myProfile_btn.UseVisualStyleBackColor = true;
+            this.myProfile_btn.Click += new System.EventHandler(this.myProfile_btn_Click);
             // 
             // leaderBord_dGView
             // 

@@ -17,6 +17,11 @@ namespace Verstoppertje_App
             InitializeComponent();
         }
 
-        
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            userMain_Page MainMenu = new userMain_Page();
+            MainMenu.Show();
+            userProfile_Page.ActiveForm.Close();
+        }
     }
 }
