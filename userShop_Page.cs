@@ -24,9 +24,10 @@ namespace Verstoppertje_App
 
         private void returnMain_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             userMain_Page MainMenu = new userMain_Page();
+            MainMenu.Closed += (s, args) => this.Close();
             MainMenu.Show();
-            userShop_Page.ActiveForm.Close();
         }
     }
 }

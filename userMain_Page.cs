@@ -19,23 +19,26 @@ namespace Verstoppertje_App
 
         private void playGame_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             gameSettings_Page GameMenu = new gameSettings_Page();
+            GameMenu.Closed += (s, args) => this.Close();
             GameMenu.Show();
-            userMain_Page.ActiveForm.Close();
         }
 
         private void itemShop_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             userShop_Page ItemShop = new userShop_Page();
+            ItemShop.Closed += (s, args) => this.Close();
             ItemShop.Show();
-            userMain_Page.ActiveForm.Close();
         }
 
         private void myProfile_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             userProfile_Page MyProfile = new userProfile_Page();
+            MyProfile.Closed += (s, args) => this.Close();
             MyProfile.Show();
-            userMain_Page.ActiveForm.Close();
         }
 
         private void exitGame_btn_Click(object sender, EventArgs e)
