@@ -11,7 +11,7 @@ namespace Verstoppertje_App.DataAccessLayer
 {
     class DAL
     {
-        string connectionString = "Data Source=db.ipictserver.nl;Initial Catalog=verstoppertje_app;Persist Security Info=True;User ID=verstoppertje;Password=r6MXpr4Qm74b";
+        string connectionString = "Data Source=db.ipictserver.nl;Initial Catalog=verstoppertje_app;Persist Security Info=True;User ID=verstoppertje;Password=r6MXpr4Qm74b;MultipleActiveResultSets=true";
         public List<User> users = new List<User>();
         public List<UserScore> scores = new List<UserScore>();
         public List<UserType> types = new List<UserType>();
@@ -65,14 +65,15 @@ namespace Verstoppertje_App.DataAccessLayer
                     string email = reader.GetString(6);
                     User tempUser = new User(ID, nickname, firstname, lastname, type, email, password);
 
+                    /*
                     // Get scores
                     string score_query = "SELECT * FROM user_score WHERE user_id = " + ID.ToString();
                     SqlCommand score_cmd = new SqlCommand(score_query, conn);
-                    SqlDataReader score_reader = cmd.ExecuteReader();
+                    SqlDataReader score_reader = score_cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        int scoreID = reader.GetInt32(0);
-                        bool won = reader.GetBoolean(1);
+                        int scoreID = Convert.ToInt32(reader["ID"]);
+                        bool won = Convert.ToBoolean(reader["won"]);
                         GameRole role = roles.Find(i => i.Id == reader.GetInt32(2));
                         int score = reader.GetInt32(3);
                         UserScore tempScore = new UserScore(won, role, score, tempUser);
@@ -91,6 +92,7 @@ namespace Verstoppertje_App.DataAccessLayer
                     }
                     score_reader.Close();
                     score_cmd.Dispose();
+                    */
                     users.Add(tempUser);
                 }
                 reader.Close();
