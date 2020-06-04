@@ -25,25 +25,26 @@ namespace Verstoppertje_App
 
         private void signUp_btn_Click(object sender, EventArgs e)
         {
-            string GameName = this.userGameName_tBox.Text;
-            string FirstName = this.userFirstName_tBox.Text;
-            string LastName = this.userLastName_tBox.Text;
-            string Password = this.userPassword_tBox.Text;
-            string Email = this.userEmail_tBox.Text;
+            List<String> textBoxes = new List<string>();
+            textBoxes.Add(this.userGameName_tBox.Text);
+            textBoxes.Add(this.userFirstName_tBox.Text);
+            textBoxes.Add(this.userLastName_tBox.Text);
+            textBoxes.Add(this.userPassword_tBox.Text);
+            textBoxes.Add(this.userEmail_tBox.Text);
 
-
-
-
-
-
-            if ((GameName ?? FirstName ?? LastName ?? Password ?? Email) != null)
+            if (!textBoxes.Any(s => String.IsNullOrEmpty(s)))
             {
-                User user = myDAL.users.Find(i => i.Nickname == GameName);
-                if (user == null)
+                User user = myDAL.users.Find(i => i.Nickname == textBoxes[0]);
+                Console.WriteLine(user);
+                if (user != null)
+                {
+                    MessageBox.Show("User already exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
                 {
                     myDAL.GetData();
                     UserType type = myDAL.types.Find(i => i.Id == 1);
-                    myDAL.SaveUser(GameName, FirstName, LastName, type, Password, Email);
+                    myDAL.SaveUser(textBoxes[0], textBoxes[1], textBoxes[2], type, textBoxes[3], textBoxes[4]);
                     signUp_Page.ActiveForm.Close();
                 }
                 else
@@ -53,7 +54,7 @@ namespace Verstoppertje_App
             }
             else
             {
-                MessageBox.Show("Not all fields have been filled", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You have to fill all the fields", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }      
         }
 
