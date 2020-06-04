@@ -38,9 +38,11 @@
             this.mainGame_panel = new System.Windows.Forms.Panel();
             this.startGame_btn = new System.Windows.Forms.Button();
             this.endGame_btn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.userSetting_groupBox = new System.Windows.Forms.GroupBox();
-            this.userSetting_groupBox.SuspendLayout();
+            this.LogWindow_rBox = new System.Windows.Forms.RichTextBox();
+            this.userSetting_grBox = new System.Windows.Forms.GroupBox();
+            this.DomoticzLog_grBox = new System.Windows.Forms.GroupBox();
+            this.userSetting_grBox.SuspendLayout();
+            this.DomoticzLog_grBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // gameTime_comboBox
@@ -88,7 +90,12 @@
             // 
             // difficulty_comboBox
             // 
+            this.difficulty_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.difficulty_comboBox.FormattingEnabled = true;
+            this.difficulty_comboBox.Items.AddRange(new object[] {
+            "Easy",
+            "Meduim",
+            "Hard"});
             this.difficulty_comboBox.Location = new System.Drawing.Point(73, 111);
             this.difficulty_comboBox.Name = "difficulty_comboBox";
             this.difficulty_comboBox.Size = new System.Drawing.Size(121, 21);
@@ -107,8 +114,10 @@
             // 
             // mainGame_panel
             // 
+            this.mainGame_panel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainGame_panel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.mainGame_panel.Location = new System.Drawing.Point(224, 28);
+            this.mainGame_panel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.mainGame_panel.Name = "mainGame_panel";
             this.mainGame_panel.Size = new System.Drawing.Size(588, 393);
             this.mainGame_panel.TabIndex = 7;
@@ -134,28 +143,38 @@
             this.endGame_btn.Text = "End Game";
             this.endGame_btn.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // LogWindow_rBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(829, 28);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(284, 393);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "";
+            this.LogWindow_rBox.Location = new System.Drawing.Point(9, 15);
+            this.LogWindow_rBox.Name = "LogWindow_rBox";
+            this.LogWindow_rBox.Size = new System.Drawing.Size(284, 393);
+            this.LogWindow_rBox.TabIndex = 10;
+            this.LogWindow_rBox.Text = "";
             // 
-            // userSetting_groupBox
+            // userSetting_grBox
             // 
-            this.userSetting_groupBox.Controls.Add(this.difficulty_comboBox);
-            this.userSetting_groupBox.Controls.Add(this.difficulty_label);
-            this.userSetting_groupBox.Controls.Add(this.hidingTime_comboBox);
-            this.userSetting_groupBox.Controls.Add(this.hideTime_label);
-            this.userSetting_groupBox.Controls.Add(this.gameTime_label);
-            this.userSetting_groupBox.Controls.Add(this.gameTime_comboBox);
-            this.userSetting_groupBox.Location = new System.Drawing.Point(9, 26);
-            this.userSetting_groupBox.Name = "userSetting_groupBox";
-            this.userSetting_groupBox.Size = new System.Drawing.Size(202, 147);
-            this.userSetting_groupBox.TabIndex = 11;
-            this.userSetting_groupBox.TabStop = false;
-            this.userSetting_groupBox.Text = "Game Settings";
+            this.userSetting_grBox.Controls.Add(this.difficulty_comboBox);
+            this.userSetting_grBox.Controls.Add(this.difficulty_label);
+            this.userSetting_grBox.Controls.Add(this.hidingTime_comboBox);
+            this.userSetting_grBox.Controls.Add(this.hideTime_label);
+            this.userSetting_grBox.Controls.Add(this.gameTime_label);
+            this.userSetting_grBox.Controls.Add(this.gameTime_comboBox);
+            this.userSetting_grBox.Location = new System.Drawing.Point(9, 26);
+            this.userSetting_grBox.Name = "userSetting_grBox";
+            this.userSetting_grBox.Size = new System.Drawing.Size(202, 147);
+            this.userSetting_grBox.TabIndex = 11;
+            this.userSetting_grBox.TabStop = false;
+            this.userSetting_grBox.Text = "Game Settings";
+            // 
+            // DomoticzLog_grBox
+            // 
+            this.DomoticzLog_grBox.Controls.Add(this.LogWindow_rBox);
+            this.DomoticzLog_grBox.Location = new System.Drawing.Point(820, 13);
+            this.DomoticzLog_grBox.Name = "DomoticzLog_grBox";
+            this.DomoticzLog_grBox.Size = new System.Drawing.Size(302, 420);
+            this.DomoticzLog_grBox.TabIndex = 12;
+            this.DomoticzLog_grBox.TabStop = false;
+            this.DomoticzLog_grBox.Text = "Log";
             // 
             // gameSettings_Page
             // 
@@ -163,16 +182,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1140, 590);
-            this.Controls.Add(this.userSetting_groupBox);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.DomoticzLog_grBox);
+            this.Controls.Add(this.userSetting_grBox);
             this.Controls.Add(this.endGame_btn);
             this.Controls.Add(this.startGame_btn);
             this.Controls.Add(this.mainGame_panel);
             this.Controls.Add(this.returnMain_btn);
             this.Name = "gameSettings_Page";
             this.Text = "Game settings";
-            this.userSetting_groupBox.ResumeLayout(false);
-            this.userSetting_groupBox.PerformLayout();
+            this.userSetting_grBox.ResumeLayout(false);
+            this.userSetting_grBox.PerformLayout();
+            this.DomoticzLog_grBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,7 +209,8 @@
         private System.Windows.Forms.Panel mainGame_panel;
         private System.Windows.Forms.Button startGame_btn;
         private System.Windows.Forms.Button endGame_btn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.GroupBox userSetting_groupBox;
+        private System.Windows.Forms.RichTextBox LogWindow_rBox;
+        private System.Windows.Forms.GroupBox userSetting_grBox;
+        private System.Windows.Forms.GroupBox DomoticzLog_grBox;
     }
 }

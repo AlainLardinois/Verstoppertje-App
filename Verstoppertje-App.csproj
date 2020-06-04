@@ -47,64 +47,73 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessLayer\DAL.cs" />
-    <Compile Include="gameFloorPlan_UserControl.cs">
+    <Compile Include="Forms\UserControls\easyDifficulty_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="gameFloorPlan_UserControl.Designer.cs">
+    <Compile Include="Forms\UserControls\easyDifficulty_UserControl.Designer.cs">
+      <DependentUpon>easyDifficulty_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\gameFloorPlan_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\gameFloorPlan_UserControl.Designer.cs">
       <DependentUpon>gameFloorPlan_UserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="gameSettings_Page.cs">
+    <Compile Include="Forms\gameSettings_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gameSettings_Page.Designer.cs">
+    <Compile Include="Forms\gameSettings_Page.Designer.cs">
       <DependentUpon>gameSettings_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="login_Page.cs">
+    <Compile Include="Forms\login_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login_Page.Designer.cs">
+    <Compile Include="Forms\login_Page.Designer.cs">
       <DependentUpon>login_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\GameRole.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\UserScore.cs" />
     <Compile Include="Model\UserType.cs" />
-    <Compile Include="signUp_Page.cs">
+    <Compile Include="Forms\signUp_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="signUp_Page.Designer.cs">
+    <Compile Include="Forms\signUp_Page.Designer.cs">
       <DependentUpon>signUp_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="userMain_Page.cs">
+    <Compile Include="Forms\userMain_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="userMain_Page.Designer.cs">
+    <Compile Include="Forms\userMain_Page.Designer.cs">
       <DependentUpon>userMain_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="userProfile_Page.cs">
+    <Compile Include="Forms\userProfile_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="userProfile_Page.Designer.cs">
+    <Compile Include="Forms\userProfile_Page.Designer.cs">
       <DependentUpon>userProfile_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="userShop_Page.cs">
+    <Compile Include="Forms\userShop_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="userShop_Page.Designer.cs">
+    <Compile Include="Forms\userShop_Page.Designer.cs">
       <DependentUpon>userShop_Page.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="gameFloorPlan_UserControl.resx">
+    <EmbeddedResource Include="Forms\UserControls\easyDifficulty_UserControl.resx">
+      <DependentUpon>easyDifficulty_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\gameFloorPlan_UserControl.resx">
       <DependentUpon>gameFloorPlan_UserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gameSettings_Page.resx">
+    <EmbeddedResource Include="Forms\gameSettings_Page.resx">
       <DependentUpon>gameSettings_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login_Page.resx">
+    <EmbeddedResource Include="Forms\login_Page.resx">
       <DependentUpon>login_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="signUp_Page.resx">
+    <EmbeddedResource Include="Forms\signUp_Page.resx">
       <DependentUpon>signUp_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -117,13 +126,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="userMain_Page.resx">
+    <EmbeddedResource Include="Forms\userMain_Page.resx">
       <DependentUpon>userMain_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userProfile_Page.resx">
+    <EmbeddedResource Include="Forms\userProfile_Page.resx">
       <DependentUpon>userProfile_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userShop_Page.resx">
+    <EmbeddedResource Include="Forms\userShop_Page.resx">
       <DependentUpon>userShop_Page.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

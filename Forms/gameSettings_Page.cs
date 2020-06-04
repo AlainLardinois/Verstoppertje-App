@@ -27,7 +27,29 @@ namespace Verstoppertje_App
 
         private void startGame_btn_Click(object sender, EventArgs e)
         {
-            mainGame_panel.Show()
+            try
+            {
+                string Difficulty = difficulty_comboBox.SelectedItem.ToString();
+                
+                if (Difficulty == "Easy")
+                {
+
+                    var easyMode = new easyDifficultyFloorplan_UserControl();
+                    mainGame_panel.Controls.Add(easyMode);
+                }
+                if (Difficulty == "Meduim")
+                {
+
+                }
+                if (Difficulty == "Hard")
+                {
+
+                }
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Please fill in all game settings before pressing play", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
