@@ -46,14 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DataAccessLayer\DAL.cs" />
+    <Compile Include="Forms\UserControls\easyDifficulty_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\easyDifficulty_UserControl.Designer.cs">
+      <DependentUpon>easyDifficulty_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControls\gameFloorPlan_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\gameFloorPlan_UserControl.Designer.cs">
+      <DependentUpon>gameFloorPlan_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\gameSettings_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\gameSettings_Page.Designer.cs">
+      <DependentUpon>gameSettings_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\login_Page.Designer.cs">
+      <DependentUpon>login_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GameRole.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserScore.cs" />
+    <Compile Include="Model\UserType.cs" />
+    <Compile Include="Forms\signUp_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\signUp_Page.Designer.cs">
+      <DependentUpon>signUp_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\userMain_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\userMain_Page.Designer.cs">
+      <DependentUpon>userMain_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\userProfile_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\userProfile_Page.Designer.cs">
+      <DependentUpon>userProfile_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\userShop_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\userShop_Page.Designer.cs">
+      <DependentUpon>userShop_Page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\UserControls\easyDifficulty_UserControl.resx">
+      <DependentUpon>easyDifficulty_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\gameFloorPlan_UserControl.resx">
+      <DependentUpon>gameFloorPlan_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\gameSettings_Page.resx">
+      <DependentUpon>gameSettings_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\login_Page.resx">
+      <DependentUpon>login_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\signUp_Page.resx">
+      <DependentUpon>signUp_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +124,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Forms\userMain_Page.resx">
+      <DependentUpon>userMain_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\userProfile_Page.resx">
+      <DependentUpon>userProfile_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\userShop_Page.resx">
+      <DependentUpon>userShop_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +147,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API Domoticz\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\maxresdefault2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\MrProg_Icon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
