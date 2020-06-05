@@ -65,6 +65,12 @@
     <Compile Include="Forms\MainLayout.Designer.cs">
       <DependentUpon>MainLayout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopForm.Designer.cs">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserControls\easyDifficulty_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainLayout.resx">
       <DependentUpon>MainLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopForm.resx">
+      <DependentUpon>ShopForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControls\easyDifficulty_UserControl.resx">
       <DependentUpon>easyDifficulty_UserControl.cs</DependentUpon>

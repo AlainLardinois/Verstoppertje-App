@@ -82,7 +82,7 @@ namespace Verstoppertje_App.Forms
         {
             if (activeUser != null)
             {
-                // ...
+                ChangeContentForm(new ShopForm());
             }
         }
 
