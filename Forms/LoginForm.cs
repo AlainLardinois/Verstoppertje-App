@@ -27,7 +27,7 @@ namespace Verstoppertje_App.Forms
             textBoxes.Add(userNameText);
             textBoxes.Add(passwordText);
 
-            if (!textBoxes.Any(s => String.IsNullOrEmpty(s)))
+            if (!textBoxes.Any(s => String.IsNullOrEmpty(s.Text)))
             {
                 try
                 {
@@ -87,7 +87,7 @@ namespace Verstoppertje_App.Forms
             textBoxes.Add(newEmailText);
             textBoxes.Add(newPasswordText);
 
-            if (!textBoxes.Any(s => String.IsNullOrEmpty(s)))
+            if (!textBoxes.Any(s => String.IsNullOrEmpty(s.Text)))
             {
                 User user = dal.users.Find(i => i.Nickname == textBoxes[0].Text);
                 if (user != null)
