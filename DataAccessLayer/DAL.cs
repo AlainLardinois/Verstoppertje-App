@@ -9,7 +9,7 @@ using System.Security.Cryptography;
 
 namespace Verstoppertje_App.DataAccessLayer
 {
-    class DAL
+    public class DAL
     {
         string connectionString = "Data Source=db.ipictserver.nl;Initial Catalog=verstoppertje_app;Persist Security Info=True;User ID=verstoppertje;Password=r6MXpr4Qm74b;MultipleActiveResultSets=true";
         public List<User> users = new List<User>();

@@ -59,8 +59,7 @@ namespace Verstoppertje_App
 
         private void UserSignUp_btn_Click(object sender, EventArgs e) //Open SignUp_Page, Registreer als nieuwe gebruiker
         {
-            signUp_Page signUp = new signUp_Page();
-            signUp.Show();
+            this.signupPanel.Visible = true;
         }
 
         private void ForgotMyPass_btn_Click(object sender, EventArgs e) //verwijzing naar pagina waar je wachtwoord kunt resetten
@@ -71,6 +70,11 @@ namespace Verstoppertje_App
         private void exitGame_btn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.signupPanel.Visible = false;
         }
     }
 }

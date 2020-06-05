@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Verstoppertje_App.Model
 {
-    class User
+    public class User
     {
         private int id;
         private string nickname;
