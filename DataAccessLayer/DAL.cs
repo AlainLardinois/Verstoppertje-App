@@ -147,6 +147,32 @@ namespace Verstoppertje_App.DataAccessLayer
             }
         }
 
+        public int UpdateUser(User user, string _new_password)
+        {
+            using (SqlConnection conn = new SqlConnection())
+            {
+                conn.ConnectionString = connectionString;
+                conn.Open();
+                if (!String.IsNullOrEmpty(_new_password))
+                {
+                    user.SetPassword(_new_password);
+                }
+                string password = user.Password;
+                string query = "UPDATE game_user SET nick_name = @nickname, first_name = @firstname, last_name = @lastname, email = @email, password = @password WHERE ID = @ID";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@nickname", user.Nickname);
+                cmd.Parameters.AddWithValue("@firstname", user.First_name);
+                cmd.Parameters.AddWithValue("@lastname", user.Last_name);
+                cmd.Parameters.AddWithValue("@email", user.Email);
+                cmd.Parameters.AddWithValue("@password", user.Password);
+                cmd.Parameters.AddWithValue("@ID", user.Id);
+                int rows = cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                this.GetData();
+                return rows;
+            }
+        }
+
         public int Delete(string table, int ID)
         {
             using (SqlConnection conn = new SqlConnection())
