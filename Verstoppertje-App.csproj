@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessLayer\DAL.cs" />
-    <Compile Include="Forms\LoadingForm.cs">
+    <Compile Include="Forms\GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LoadingForm.Designer.cs">
-      <DependentUpon>LoadingForm.cs</DependentUpon>
+    <Compile Include="Forms\GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -64,6 +64,12 @@
     </Compile>
     <Compile Include="Forms\MainLayout.Designer.cs">
       <DependentUpon>MainLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ShopForm.cs">
       <SubType>Form</SubType>
@@ -125,14 +131,17 @@
     <Compile Include="Forms\Old\userShop_Page.Designer.cs">
       <DependentUpon>userShop_Page.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\LoadingForm.resx">
-      <DependentUpon>LoadingForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainLayout.resx">
       <DependentUpon>MainLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ShopForm.resx">
       <DependentUpon>ShopForm.cs</DependentUpon>
@@ -196,6 +205,8 @@
   <ItemGroup>
     <Content Include="Picture\HSicon.ico" />
     <Content Include="Picture\HSonline.png" />
+    <Content Include="Picture\Map.png" />
+    <Content Include="Picture\user.png" />
     <Content Include="Picture\Wedges-6.7s-200px.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
