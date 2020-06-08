@@ -149,7 +149,7 @@
             this.profileButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.profileButton.Size = new System.Drawing.Size(250, 45);
             this.profileButton.TabIndex = 4;
-            this.profileButton.Text = "Alain Lardinois";
+            this.profileButton.Text = "Profiel";
             this.profileButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.profileButton.UseVisualStyleBackColor = true;
             this.profileButton.Click += new System.EventHandler(this.profileButton_Click);

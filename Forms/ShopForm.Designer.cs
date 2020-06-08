@@ -28,349 +28,349 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.upgradeCameraLabel = new System.Windows.Forms.Label();
+            this.upgradeCameraCost = new System.Windows.Forms.Label();
+            this.cameraPanel = new System.Windows.Forms.Panel();
+            this.upgradeCameraImage = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.creditLabel = new System.Windows.Forms.Label();
+            this.creditPreLabel = new System.Windows.Forms.Label();
+            this.shopLabel = new System.Windows.Forms.Label();
+            this.DPUPanel = new System.Windows.Forms.Panel();
+            this.upgradeDPUImage = new System.Windows.Forms.PictureBox();
+            this.upgradeDPUCost = new System.Windows.Forms.Label();
+            this.upgradeDPULabel = new System.Windows.Forms.Label();
+            this.soundPanel = new System.Windows.Forms.Panel();
+            this.upgradeSoundImage = new System.Windows.Forms.PictureBox();
+            this.upgradeSoundCost = new System.Windows.Forms.Label();
+            this.upgradeSoundLabel = new System.Windows.Forms.Label();
+            this.heatPanel = new System.Windows.Forms.Panel();
+            this.upgradeHeatImage = new System.Windows.Forms.PictureBox();
+            this.upgradeHeatCost = new System.Windows.Forms.Label();
+            this.upgradeHeatLabel = new System.Windows.Forms.Label();
+            this.CHPanel = new System.Windows.Forms.Panel();
+            this.upgradeCHImage = new System.Windows.Forms.PictureBox();
+            this.upgradeCHCost = new System.Windows.Forms.Label();
+            this.upgradeCHLabel = new System.Windows.Forms.Label();
+            this.lastlocPanel = new System.Windows.Forms.Panel();
+            this.upgradeLastlocImage = new System.Windows.Forms.PictureBox();
+            this.upgradeLastlocCost = new System.Windows.Forms.Label();
+            this.upgradeLastlocLabel = new System.Windows.Forms.Label();
+            this.cameraPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeCameraImage)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.DPUPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeDPUImage)).BeginInit();
+            this.soundPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeSoundImage)).BeginInit();
+            this.heatPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeHeatImage)).BeginInit();
+            this.CHPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeCHImage)).BeginInit();
+            this.lastlocPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeLastlocImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // upgradeCameraLabel
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 104);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.upgradeCameraLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeCameraLabel.AutoSize = true;
+            this.upgradeCameraLabel.Location = new System.Drawing.Point(49, 124);
+            this.upgradeCameraLabel.Name = "upgradeCameraLabel";
+            this.upgradeCameraLabel.Size = new System.Drawing.Size(136, 24);
+            this.upgradeCameraLabel.TabIndex = 1;
+            this.upgradeCameraLabel.Text = "Upgradename";
             // 
-            // label1
+            // upgradeCameraCost
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Upgradename";
+            this.upgradeCameraCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeCameraCost.AutoSize = true;
+            this.upgradeCameraCost.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upgradeCameraCost.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.upgradeCameraCost.Location = new System.Drawing.Point(76, 148);
+            this.upgradeCameraCost.Name = "upgradeCameraCost";
+            this.upgradeCameraCost.Size = new System.Drawing.Size(86, 20);
+            this.upgradeCameraCost.TabIndex = 2;
+            this.upgradeCameraCost.Text = "100 Credits";
             // 
-            // label2
+            // cameraPanel
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label2.Location = new System.Drawing.Point(76, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "100 Credits";
+            this.cameraPanel.Controls.Add(this.upgradeCameraImage);
+            this.cameraPanel.Controls.Add(this.upgradeCameraCost);
+            this.cameraPanel.Controls.Add(this.upgradeCameraLabel);
+            this.cameraPanel.Location = new System.Drawing.Point(32, 84);
+            this.cameraPanel.Name = "cameraPanel";
+            this.cameraPanel.Size = new System.Drawing.Size(233, 184);
+            this.cameraPanel.TabIndex = 3;
             // 
-            // panel1
+            // upgradeCameraImage
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(32, 84);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 184);
-            this.panel1.TabIndex = 3;
+            this.upgradeCameraImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeCameraImage.Location = new System.Drawing.Point(17, 17);
+            this.upgradeCameraImage.Name = "upgradeCameraImage";
+            this.upgradeCameraImage.Size = new System.Drawing.Size(196, 104);
+            this.upgradeCameraImage.TabIndex = 0;
+            this.upgradeCameraImage.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.creditLabel);
+            this.panel2.Controls.Add(this.creditPreLabel);
+            this.panel2.Controls.Add(this.shopLabel);
+            this.panel2.Controls.Add(this.DPUPanel);
+            this.panel2.Controls.Add(this.soundPanel);
+            this.panel2.Controls.Add(this.heatPanel);
+            this.panel2.Controls.Add(this.CHPanel);
+            this.panel2.Controls.Add(this.lastlocPanel);
+            this.panel2.Controls.Add(this.cameraPanel);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(890, 482);
             this.panel2.TabIndex = 4;
             // 
-            // panel3
+            // creditLabel
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(329, 84);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(233, 184);
-            this.panel3.TabIndex = 4;
+            this.creditLabel.AutoSize = true;
+            this.creditLabel.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditLabel.ForeColor = System.Drawing.Color.Olive;
+            this.creditLabel.Location = new System.Drawing.Point(472, 44);
+            this.creditLabel.Name = "creditLabel";
+            this.creditLabel.Size = new System.Drawing.Size(46, 20);
+            this.creditLabel.TabIndex = 9;
+            this.creditLabel.Text = "{VAR}";
             // 
-            // pictureBox2
+            // creditPreLabel
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 104);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.creditPreLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.creditPreLabel.AutoSize = true;
+            this.creditPreLabel.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditPreLabel.Location = new System.Drawing.Point(389, 44);
+            this.creditPreLabel.Name = "creditPreLabel";
+            this.creditPreLabel.Size = new System.Drawing.Size(100, 20);
+            this.creditPreLabel.TabIndex = 8;
+            this.creditPreLabel.Text = "Your credits: ";
             // 
-            // label3
+            // shopLabel
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label3.Location = new System.Drawing.Point(76, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "100 Credits";
+            this.shopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shopLabel.AutoSize = true;
+            this.shopLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shopLabel.Location = new System.Drawing.Point(403, 7);
+            this.shopLabel.Name = "shopLabel";
+            this.shopLabel.Size = new System.Drawing.Size(91, 39);
+            this.shopLabel.TabIndex = 7;
+            this.shopLabel.Text = "Shop";
             // 
-            // label4
+            // DPUPanel
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 24);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Upgradename";
+            this.DPUPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DPUPanel.Controls.Add(this.upgradeDPUImage);
+            this.DPUPanel.Controls.Add(this.upgradeDPUCost);
+            this.DPUPanel.Controls.Add(this.upgradeDPULabel);
+            this.DPUPanel.Location = new System.Drawing.Point(624, 282);
+            this.DPUPanel.Name = "DPUPanel";
+            this.DPUPanel.Size = new System.Drawing.Size(233, 184);
+            this.DPUPanel.TabIndex = 4;
             // 
-            // panel4
+            // upgradeDPUImage
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(624, 84);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(233, 184);
-            this.panel4.TabIndex = 5;
+            this.upgradeDPUImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeDPUImage.Location = new System.Drawing.Point(17, 17);
+            this.upgradeDPUImage.Name = "upgradeDPUImage";
+            this.upgradeDPUImage.Size = new System.Drawing.Size(196, 104);
+            this.upgradeDPUImage.TabIndex = 0;
+            this.upgradeDPUImage.TabStop = false;
             // 
-            // pictureBox3
+            // upgradeDPUCost
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 17);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(196, 104);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.upgradeDPUCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeDPUCost.AutoSize = true;
+            this.upgradeDPUCost.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upgradeDPUCost.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.upgradeDPUCost.Location = new System.Drawing.Point(76, 148);
+            this.upgradeDPUCost.Name = "upgradeDPUCost";
+            this.upgradeDPUCost.Size = new System.Drawing.Size(86, 20);
+            this.upgradeDPUCost.TabIndex = 2;
+            this.upgradeDPUCost.Text = "100 Credits";
             // 
-            // label5
+            // upgradeDPULabel
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label5.Location = new System.Drawing.Point(76, 148);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 18);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "100 Credits";
+            this.upgradeDPULabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeDPULabel.AutoSize = true;
+            this.upgradeDPULabel.Location = new System.Drawing.Point(49, 124);
+            this.upgradeDPULabel.Name = "upgradeDPULabel";
+            this.upgradeDPULabel.Size = new System.Drawing.Size(136, 24);
+            this.upgradeDPULabel.TabIndex = 1;
+            this.upgradeDPULabel.Text = "Upgradename";
             // 
-            // label6
+            // soundPanel
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(47, 124);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 24);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Upgradename";
+            this.soundPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.soundPanel.Controls.Add(this.upgradeSoundImage);
+            this.soundPanel.Controls.Add(this.upgradeSoundCost);
+            this.soundPanel.Controls.Add(this.upgradeSoundLabel);
+            this.soundPanel.Location = new System.Drawing.Point(329, 282);
+            this.soundPanel.Name = "soundPanel";
+            this.soundPanel.Size = new System.Drawing.Size(233, 184);
+            this.soundPanel.TabIndex = 4;
             // 
-            // panel5
+            // upgradeSoundImage
             // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(32, 282);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(233, 184);
-            this.panel5.TabIndex = 6;
+            this.upgradeSoundImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeSoundImage.Location = new System.Drawing.Point(17, 17);
+            this.upgradeSoundImage.Name = "upgradeSoundImage";
+            this.upgradeSoundImage.Size = new System.Drawing.Size(196, 104);
+            this.upgradeSoundImage.TabIndex = 0;
+            this.upgradeSoundImage.TabStop = false;
             // 
-            // pictureBox4
+            // upgradeSoundCost
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 17);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(196, 104);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.upgradeSoundCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeSoundCost.AutoSize = true;
+            this.upgradeSoundCost.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upgradeSoundCost.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.upgradeSoundCost.Location = new System.Drawing.Point(76, 148);
+            this.upgradeSoundCost.Name = "upgradeSoundCost";
+            this.upgradeSoundCost.Size = new System.Drawing.Size(86, 20);
+            this.upgradeSoundCost.TabIndex = 2;
+            this.upgradeSoundCost.Text = "100 Credits";
             // 
-            // label7
+            // upgradeSoundLabel
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label7.Location = new System.Drawing.Point(76, 148);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 18);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "100 Credits";
+            this.upgradeSoundLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeSoundLabel.AutoSize = true;
+            this.upgradeSoundLabel.Location = new System.Drawing.Point(49, 124);
+            this.upgradeSoundLabel.Name = "upgradeSoundLabel";
+            this.upgradeSoundLabel.Size = new System.Drawing.Size(136, 24);
+            this.upgradeSoundLabel.TabIndex = 1;
+            this.upgradeSoundLabel.Text = "Upgradename";
             // 
-            // label8
+            // heatPanel
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(47, 124);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 24);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Upgradename";
+            this.heatPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.heatPanel.Controls.Add(this.upgradeHeatImage);
+            this.heatPanel.Controls.Add(this.upgradeHeatCost);
+            this.heatPanel.Controls.Add(this.upgradeHeatLabel);
+            this.heatPanel.Location = new System.Drawing.Point(32, 282);
+            this.heatPanel.Name = "heatPanel";
+            this.heatPanel.Size = new System.Drawing.Size(233, 184);
+            this.heatPanel.TabIndex = 6;
             // 
-            // panel6
+            // upgradeHeatImage
             // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(329, 282);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(233, 184);
-            this.panel6.TabIndex = 4;
+            this.upgradeHeatImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeHeatImage.Location = new System.Drawing.Point(17, 17);
+            this.upgradeHeatImage.Name = "upgradeHeatImage";
+            this.upgradeHeatImage.Size = new System.Drawing.Size(196, 104);
+            this.upgradeHeatImage.TabIndex = 0;
+            this.upgradeHeatImage.TabStop = false;
             // 
-            // pictureBox5
+            // upgradeHeatCost
             // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 17);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(196, 104);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.upgradeHeatCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeHeatCost.AutoSize = true;
+            this.upgradeHeatCost.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upgradeHeatCost.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.upgradeHeatCost.Location = new System.Drawing.Point(76, 148);
+            this.upgradeHeatCost.Name = "upgradeHeatCost";
+            this.upgradeHeatCost.Size = new System.Drawing.Size(86, 20);
+            this.upgradeHeatCost.TabIndex = 2;
+            this.upgradeHeatCost.Text = "100 Credits";
             // 
-            // label9
+            // upgradeHeatLabel
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label9.Location = new System.Drawing.Point(76, 148);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 18);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "100 Credits";
+            this.upgradeHeatLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeHeatLabel.AutoSize = true;
+            this.upgradeHeatLabel.Location = new System.Drawing.Point(49, 124);
+            this.upgradeHeatLabel.Name = "upgradeHeatLabel";
+            this.upgradeHeatLabel.Size = new System.Drawing.Size(136, 24);
+            this.upgradeHeatLabel.TabIndex = 1;
+            this.upgradeHeatLabel.Text = "Upgradename";
             // 
-            // label10
+            // CHPanel
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(47, 124);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 24);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Upgradename";
+            this.CHPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CHPanel.Controls.Add(this.upgradeCHImage);
+            this.CHPanel.Controls.Add(this.upgradeCHCost);
+            this.CHPanel.Controls.Add(this.upgradeCHLabel);
+            this.CHPanel.Location = new System.Drawing.Point(624, 84);
+            this.CHPanel.Name = "CHPanel";
+            this.CHPanel.Size = new System.Drawing.Size(233, 184);
+            this.CHPanel.TabIndex = 5;
             // 
-            // panel7
+            // upgradeCHImage
             // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Controls.Add(this.label11);
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(624, 282);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(233, 184);
-            this.panel7.TabIndex = 4;
+            this.upgradeCHImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeCHImage.Location = new System.Drawing.Point(17, 17);
+            this.upgradeCHImage.Name = "upgradeCHImage";
+            this.upgradeCHImage.Size = new System.Drawing.Size(196, 104);
+            this.upgradeCHImage.TabIndex = 0;
+            this.upgradeCHImage.TabStop = false;
             // 
-            // pictureBox6
+            // upgradeCHCost
             // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox6.Location = new System.Drawing.Point(17, 17);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(196, 104);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.upgradeCHCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeCHCost.AutoSize = true;
+            this.upgradeCHCost.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upgradeCHCost.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.upgradeCHCost.Location = new System.Drawing.Point(76, 148);
+            this.upgradeCHCost.Name = "upgradeCHCost";
+            this.upgradeCHCost.Size = new System.Drawing.Size(86, 20);
+            this.upgradeCHCost.TabIndex = 2;
+            this.upgradeCHCost.Text = "100 Credits";
             // 
-            // label11
+            // upgradeCHLabel
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label11.Location = new System.Drawing.Point(76, 148);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 18);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "100 Credits";
+            this.upgradeCHLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeCHLabel.AutoSize = true;
+            this.upgradeCHLabel.Location = new System.Drawing.Point(49, 124);
+            this.upgradeCHLabel.Name = "upgradeCHLabel";
+            this.upgradeCHLabel.Size = new System.Drawing.Size(136, 24);
+            this.upgradeCHLabel.TabIndex = 1;
+            this.upgradeCHLabel.Text = "Upgradename";
             // 
-            // label12
+            // lastlocPanel
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(47, 124);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(136, 24);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Upgradename";
+            this.lastlocPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lastlocPanel.Controls.Add(this.upgradeLastlocImage);
+            this.lastlocPanel.Controls.Add(this.upgradeLastlocCost);
+            this.lastlocPanel.Controls.Add(this.upgradeLastlocLabel);
+            this.lastlocPanel.Location = new System.Drawing.Point(329, 84);
+            this.lastlocPanel.Name = "lastlocPanel";
+            this.lastlocPanel.Size = new System.Drawing.Size(233, 184);
+            this.lastlocPanel.TabIndex = 4;
             // 
-            // label13
+            // upgradeLastlocImage
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Montserrat SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(403, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 37);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Shop";
+            this.upgradeLastlocImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeLastlocImage.Location = new System.Drawing.Point(17, 17);
+            this.upgradeLastlocImage.Name = "upgradeLastlocImage";
+            this.upgradeLastlocImage.Size = new System.Drawing.Size(196, 104);
+            this.upgradeLastlocImage.TabIndex = 0;
+            this.upgradeLastlocImage.TabStop = false;
             // 
-            // label14
+            // upgradeLastlocCost
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(389, 44);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 18);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Your credits: ";
+            this.upgradeLastlocCost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeLastlocCost.AutoSize = true;
+            this.upgradeLastlocCost.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upgradeLastlocCost.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.upgradeLastlocCost.Location = new System.Drawing.Point(76, 148);
+            this.upgradeLastlocCost.Name = "upgradeLastlocCost";
+            this.upgradeLastlocCost.Size = new System.Drawing.Size(86, 20);
+            this.upgradeLastlocCost.TabIndex = 2;
+            this.upgradeLastlocCost.Text = "100 Credits";
             // 
-            // label15
+            // upgradeLastlocLabel
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Montserrat Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Olive;
-            this.label15.Location = new System.Drawing.Point(472, 44);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(43, 18);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "{VAR}";
+            this.upgradeLastlocLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.upgradeLastlocLabel.AutoSize = true;
+            this.upgradeLastlocLabel.Location = new System.Drawing.Point(49, 124);
+            this.upgradeLastlocLabel.Name = "upgradeLastlocLabel";
+            this.upgradeLastlocLabel.Size = new System.Drawing.Size(136, 24);
+            this.upgradeLastlocLabel.TabIndex = 1;
+            this.upgradeLastlocLabel.Text = "Upgradename";
             // 
             // ShopForm
             // 
@@ -381,62 +381,62 @@
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ShopForm";
             this.Text = "ShopForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.cameraPanel.ResumeLayout(false);
+            this.cameraPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeCameraImage)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.DPUPanel.ResumeLayout(false);
+            this.DPUPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeDPUImage)).EndInit();
+            this.soundPanel.ResumeLayout(false);
+            this.soundPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeSoundImage)).EndInit();
+            this.heatPanel.ResumeLayout(false);
+            this.heatPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeHeatImage)).EndInit();
+            this.CHPanel.ResumeLayout(false);
+            this.CHPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeCHImage)).EndInit();
+            this.lastlocPanel.ResumeLayout(false);
+            this.lastlocPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.upgradeLastlocImage)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox upgradeCameraImage;
+        private System.Windows.Forms.Label upgradeCameraLabel;
+        private System.Windows.Forms.Label upgradeCameraCost;
+        private System.Windows.Forms.Panel cameraPanel;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label creditLabel;
+        private System.Windows.Forms.Label creditPreLabel;
+        private System.Windows.Forms.Label shopLabel;
+        private System.Windows.Forms.Panel DPUPanel;
+        private System.Windows.Forms.PictureBox upgradeDPUImage;
+        private System.Windows.Forms.Label upgradeDPUCost;
+        private System.Windows.Forms.Label upgradeDPULabel;
+        private System.Windows.Forms.Panel soundPanel;
+        private System.Windows.Forms.PictureBox upgradeSoundImage;
+        private System.Windows.Forms.Label upgradeSoundCost;
+        private System.Windows.Forms.Label upgradeSoundLabel;
+        private System.Windows.Forms.Panel heatPanel;
+        private System.Windows.Forms.PictureBox upgradeHeatImage;
+        private System.Windows.Forms.Label upgradeHeatCost;
+        private System.Windows.Forms.Label upgradeHeatLabel;
+        private System.Windows.Forms.Panel CHPanel;
+        private System.Windows.Forms.PictureBox upgradeCHImage;
+        private System.Windows.Forms.Label upgradeCHCost;
+        private System.Windows.Forms.Label upgradeCHLabel;
+        private System.Windows.Forms.Panel lastlocPanel;
+        private System.Windows.Forms.PictureBox upgradeLastlocImage;
+        private System.Windows.Forms.Label upgradeLastlocCost;
+        private System.Windows.Forms.Label upgradeLastlocLabel;
     }
 }

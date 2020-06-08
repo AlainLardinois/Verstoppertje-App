@@ -15,25 +15,40 @@ namespace Verstoppertje_App.Forms
     public partial class MainLayout : Form
     {
         private Form activeContentForm = null;
-        private User activeUser = null;
+        private int activeUser = 0;
+        private DAL dal = new DAL();
+        private bool gameInProgress = false;
         public MainLayout()
         {
             InitializeComponent();
             ChangeContentForm(new LoginForm());
         }
 
-        private void UpdateUser()
+        public void SetUser(User user)
         {
-            if (activeUser != null)
+            activeUser = user.Id;
+        }
+
+        public User GetUser()
+        {
+            dal.GetData();
+            User user = dal.users.Find(i => i.Id == activeUser);
+            return user;
+        }
+
+        public void UpdateUser()
+        {
+            if (activeUser != 0)
             {
-                profileButton.Text = activeUser.First_name + ' ' + activeUser.Last_name;
+                User user = GetUser();
+                profileButton.Text = user.First_name + ' ' + user.Last_name;
                 profileButton.Show();
-                logoutMenuButton.Show();
+                logoutMenuButton.Text = "Logout";
             }
             else
             {
                 profileButton.Hide();
-                logoutMenuButton.Hide();
+                logoutMenuButton.Text = "Exit";
             }
         }
 
@@ -56,66 +71,108 @@ namespace Verstoppertje_App.Forms
 
         private void homeMenuButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != null)
+            if (activeUser != 0)
             {
-                // ...
+                if (gameInProgress != true)
+                {
+                    // ...
+                }
+                else
+                {
+                    MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
         private void gameMenuButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != null)
+            if (activeUser != 0)
             {
-                // ...
+                if (gameInProgress != true)
+                {
+                    ChangeContentForm(new GameForm());
+                }
             }
         }
 
         private void leaderBoardMenuButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != null)
+            if (activeUser != 0)
             {
-                // ...
+                if (gameInProgress != true)
+                {
+                    // ...
+                }
+                else
+                {
+                    MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
         private void shopMenuButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != null)
+            if (activeUser != 0)
             {
-                ChangeContentForm(new ShopForm());
+                if (gameInProgress != true)
+                {
+                    ChangeContentForm(new ShopForm());
+                }
+                else
+                {
+                    MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
         private void profileButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != null)
+            if (activeUser != 0)
             {
-                // ...
+                if (gameInProgress != true)
+                {
+                    ChangeContentForm(new ProfileForm());
+                }
+                else
+                {
+                    MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
         private void logoutMenuButton_Click(object sender, EventArgs e)
         {
-            activeUser = null;
-            ChangeContentForm(new LoginForm());
+            if (activeUser != 0)
+            {
+                if (gameInProgress != true)
+                {
+                    activeUser = 0;
+                    ChangeContentForm(new LoginForm());
+                }
+                else
+                {
+                    MessageBox.Show("You cannot logout while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                Close();
+            }
         }
 
         private void helpMenuButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != null)
+            if (activeUser != 0)
             {
-                // ...
+                if (gameInProgress != true)
+                {
+                    // ...
+                }
+                else
+                {
+                    MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-        }
-
-        public void SetUser(User user)
-        {
-            activeUser = user;
-        }
-
-        public User GetUser()
-        {
-            return activeUser;
         }
 
         public void ResetView()
@@ -126,6 +183,11 @@ namespace Verstoppertje_App.Forms
                 activeContentForm = null;
             }
             UpdateUser();
+        }
+
+        public void SetGameInProgress(bool inProgress)
+        {
+            gameInProgress = inProgress;
         }
     }
 }
