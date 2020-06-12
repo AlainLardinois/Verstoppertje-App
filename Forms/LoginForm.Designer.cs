@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.loginPanel = new System.Windows.Forms.Panel();
+            this.passResetPanel = new System.Windows.Forms.Panel();
+            this.passwordResetLabel = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
+            this.passResetButton = new System.Windows.Forms.Button();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.emailResetText = new System.Windows.Forms.TextBox();
             this.loginLabel = new System.Windows.Forms.Label();
             this.signupButton = new System.Windows.Forms.Button();
             this.forgotPasswordButton = new System.Windows.Forms.Button();
@@ -37,26 +43,20 @@
             this.userNameLabel = new System.Windows.Forms.Label();
             this.passwordText = new System.Windows.Forms.TextBox();
             this.userNameText = new System.Windows.Forms.TextBox();
-            this.passResetPanel = new System.Windows.Forms.Panel();
-            this.passwordResetLabel = new System.Windows.Forms.Label();
-            this.backButton = new System.Windows.Forms.Button();
-            this.passResetButton = new System.Windows.Forms.Button();
-            this.emailLabel = new System.Windows.Forms.Label();
-            this.emailResetText = new System.Windows.Forms.TextBox();
             this.signupPanel = new System.Windows.Forms.Panel();
+            this.newPasswordLabel = new System.Windows.Forms.Label();
+            this.newEmailLabel = new System.Windows.Forms.Label();
+            this.newLastnameLabel = new System.Windows.Forms.Label();
+            this.newFirstnameLabel = new System.Windows.Forms.Label();
+            this.newPasswordText = new System.Windows.Forms.TextBox();
+            this.newEmailText = new System.Windows.Forms.TextBox();
+            this.newLastnameText = new System.Windows.Forms.TextBox();
+            this.newFirstnameText = new System.Windows.Forms.TextBox();
             this.signupLabel = new System.Windows.Forms.Label();
             this.sBackButton = new System.Windows.Forms.Button();
             this.createButton = new System.Windows.Forms.Button();
             this.newUsernameLabel = new System.Windows.Forms.Label();
             this.newUsernameText = new System.Windows.Forms.TextBox();
-            this.newFirstnameText = new System.Windows.Forms.TextBox();
-            this.newLastnameText = new System.Windows.Forms.TextBox();
-            this.newEmailText = new System.Windows.Forms.TextBox();
-            this.newPasswordText = new System.Windows.Forms.TextBox();
-            this.newFirstnameLabel = new System.Windows.Forms.Label();
-            this.newLastnameLabel = new System.Windows.Forms.Label();
-            this.newEmailLabel = new System.Windows.Forms.Label();
-            this.newPasswordLabel = new System.Windows.Forms.Label();
             this.loginPanel.SuspendLayout();
             this.passResetPanel.SuspendLayout();
             this.signupPanel.SuspendLayout();
@@ -65,6 +65,7 @@
             // loginPanel
             // 
             this.loginPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.loginPanel.Controls.Add(this.passResetPanel);
             this.loginPanel.Controls.Add(this.loginLabel);
             this.loginPanel.Controls.Add(this.signupButton);
             this.loginPanel.Controls.Add(this.forgotPasswordButton);
@@ -78,6 +79,82 @@
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(888, 480);
             this.loginPanel.TabIndex = 0;
+            // 
+            // passResetPanel
+            // 
+            this.passResetPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passResetPanel.Controls.Add(this.passwordResetLabel);
+            this.passResetPanel.Controls.Add(this.backButton);
+            this.passResetPanel.Controls.Add(this.passResetButton);
+            this.passResetPanel.Controls.Add(this.emailLabel);
+            this.passResetPanel.Controls.Add(this.emailResetText);
+            this.passResetPanel.Location = new System.Drawing.Point(0, 0);
+            this.passResetPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.passResetPanel.Name = "passResetPanel";
+            this.passResetPanel.Size = new System.Drawing.Size(888, 480);
+            this.passResetPanel.TabIndex = 8;
+            this.passResetPanel.Visible = false;
+            // 
+            // passwordResetLabel
+            // 
+            this.passwordResetLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passwordResetLabel.AutoSize = true;
+            this.passwordResetLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordResetLabel.Location = new System.Drawing.Point(325, 116);
+            this.passwordResetLabel.Name = "passwordResetLabel";
+            this.passwordResetLabel.Size = new System.Drawing.Size(264, 41);
+            this.passwordResetLabel.TabIndex = 7;
+            this.passwordResetLabel.Text = "Reset password";
+            // 
+            // backButton
+            // 
+            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Montserrat Light", 8F);
+            this.backButton.Location = new System.Drawing.Point(361, 324);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(192, 35);
+            this.backButton.TabIndex = 5;
+            this.backButton.Text = "Go back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // passResetButton
+            // 
+            this.passResetButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.passResetButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.passResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.passResetButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.passResetButton.Location = new System.Drawing.Point(495, 259);
+            this.passResetButton.Name = "passResetButton";
+            this.passResetButton.Size = new System.Drawing.Size(112, 34);
+            this.passResetButton.TabIndex = 4;
+            this.passResetButton.Text = "Reset";
+            this.passResetButton.UseVisualStyleBackColor = true;
+            this.passResetButton.Click += new System.EventHandler(this.passResetButton_Click);
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Location = new System.Drawing.Point(285, 207);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(66, 24);
+            this.emailLabel.TabIndex = 2;
+            this.emailLabel.Text = "E-mail";
+            // 
+            // emailResetText
+            // 
+            this.emailResetText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.emailResetText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.emailResetText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.emailResetText.ForeColor = System.Drawing.Color.Gainsboro;
+            this.emailResetText.Location = new System.Drawing.Point(387, 205);
+            this.emailResetText.Name = "emailResetText";
+            this.emailResetText.Size = new System.Drawing.Size(220, 28);
+            this.emailResetText.TabIndex = 0;
             // 
             // loginLabel
             // 
@@ -177,82 +254,6 @@
             this.userNameText.Size = new System.Drawing.Size(220, 28);
             this.userNameText.TabIndex = 0;
             // 
-            // passResetPanel
-            // 
-            this.passResetPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passResetPanel.Controls.Add(this.passwordResetLabel);
-            this.passResetPanel.Controls.Add(this.backButton);
-            this.passResetPanel.Controls.Add(this.passResetButton);
-            this.passResetPanel.Controls.Add(this.emailLabel);
-            this.passResetPanel.Controls.Add(this.emailResetText);
-            this.passResetPanel.Location = new System.Drawing.Point(13, 13);
-            this.passResetPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.passResetPanel.Name = "passResetPanel";
-            this.passResetPanel.Size = new System.Drawing.Size(888, 480);
-            this.passResetPanel.TabIndex = 8;
-            this.passResetPanel.Visible = false;
-            // 
-            // passwordResetLabel
-            // 
-            this.passwordResetLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passwordResetLabel.AutoSize = true;
-            this.passwordResetLabel.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordResetLabel.Location = new System.Drawing.Point(325, 116);
-            this.passwordResetLabel.Name = "passwordResetLabel";
-            this.passwordResetLabel.Size = new System.Drawing.Size(264, 41);
-            this.passwordResetLabel.TabIndex = 7;
-            this.passwordResetLabel.Text = "Reset password";
-            // 
-            // backButton
-            // 
-            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.backButton.FlatAppearance.BorderSize = 0;
-            this.backButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Font = new System.Drawing.Font("Montserrat Light", 8F);
-            this.backButton.Location = new System.Drawing.Point(361, 324);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(192, 35);
-            this.backButton.TabIndex = 5;
-            this.backButton.Text = "Go back";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
-            // passResetButton
-            // 
-            this.passResetButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passResetButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.passResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.passResetButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.passResetButton.Location = new System.Drawing.Point(495, 259);
-            this.passResetButton.Name = "passResetButton";
-            this.passResetButton.Size = new System.Drawing.Size(112, 34);
-            this.passResetButton.TabIndex = 4;
-            this.passResetButton.Text = "Reset";
-            this.passResetButton.UseVisualStyleBackColor = true;
-            this.passResetButton.Click += new System.EventHandler(this.passResetButton_Click);
-            // 
-            // emailLabel
-            // 
-            this.emailLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(285, 207);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(66, 24);
-            this.emailLabel.TabIndex = 2;
-            this.emailLabel.Text = "E-mail";
-            // 
-            // emailResetText
-            // 
-            this.emailResetText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailResetText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.emailResetText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.emailResetText.ForeColor = System.Drawing.Color.Gainsboro;
-            this.emailResetText.Location = new System.Drawing.Point(387, 205);
-            this.emailResetText.Name = "emailResetText";
-            this.emailResetText.Size = new System.Drawing.Size(220, 28);
-            this.emailResetText.TabIndex = 0;
-            // 
             // signupPanel
             // 
             this.signupPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -275,6 +276,91 @@
             this.signupPanel.Size = new System.Drawing.Size(888, 480);
             this.signupPanel.TabIndex = 9;
             this.signupPanel.Visible = false;
+            // 
+            // newPasswordLabel
+            // 
+            this.newPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newPasswordLabel.AutoSize = true;
+            this.newPasswordLabel.Location = new System.Drawing.Point(276, 276);
+            this.newPasswordLabel.Name = "newPasswordLabel";
+            this.newPasswordLabel.Size = new System.Drawing.Size(93, 24);
+            this.newPasswordLabel.TabIndex = 15;
+            this.newPasswordLabel.Text = "Password";
+            // 
+            // newEmailLabel
+            // 
+            this.newEmailLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newEmailLabel.AutoSize = true;
+            this.newEmailLabel.Location = new System.Drawing.Point(276, 242);
+            this.newEmailLabel.Name = "newEmailLabel";
+            this.newEmailLabel.Size = new System.Drawing.Size(66, 24);
+            this.newEmailLabel.TabIndex = 14;
+            this.newEmailLabel.Text = "E-mail";
+            // 
+            // newLastnameLabel
+            // 
+            this.newLastnameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newLastnameLabel.AutoSize = true;
+            this.newLastnameLabel.Location = new System.Drawing.Point(276, 208);
+            this.newLastnameLabel.Name = "newLastnameLabel";
+            this.newLastnameLabel.Size = new System.Drawing.Size(99, 24);
+            this.newLastnameLabel.TabIndex = 13;
+            this.newLastnameLabel.Text = "Last name";
+            // 
+            // newFirstnameLabel
+            // 
+            this.newFirstnameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newFirstnameLabel.AutoSize = true;
+            this.newFirstnameLabel.Location = new System.Drawing.Point(276, 173);
+            this.newFirstnameLabel.Name = "newFirstnameLabel";
+            this.newFirstnameLabel.Size = new System.Drawing.Size(102, 24);
+            this.newFirstnameLabel.TabIndex = 12;
+            this.newFirstnameLabel.Text = "First name";
+            // 
+            // newPasswordText
+            // 
+            this.newPasswordText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newPasswordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.newPasswordText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.newPasswordText.ForeColor = System.Drawing.Color.Gainsboro;
+            this.newPasswordText.Location = new System.Drawing.Point(387, 274);
+            this.newPasswordText.Name = "newPasswordText";
+            this.newPasswordText.PasswordChar = '•';
+            this.newPasswordText.Size = new System.Drawing.Size(220, 28);
+            this.newPasswordText.TabIndex = 11;
+            // 
+            // newEmailText
+            // 
+            this.newEmailText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newEmailText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.newEmailText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.newEmailText.ForeColor = System.Drawing.Color.Gainsboro;
+            this.newEmailText.Location = new System.Drawing.Point(387, 240);
+            this.newEmailText.Name = "newEmailText";
+            this.newEmailText.Size = new System.Drawing.Size(220, 28);
+            this.newEmailText.TabIndex = 10;
+            // 
+            // newLastnameText
+            // 
+            this.newLastnameText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newLastnameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.newLastnameText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.newLastnameText.ForeColor = System.Drawing.Color.Gainsboro;
+            this.newLastnameText.Location = new System.Drawing.Point(387, 205);
+            this.newLastnameText.Name = "newLastnameText";
+            this.newLastnameText.Size = new System.Drawing.Size(220, 28);
+            this.newLastnameText.TabIndex = 9;
+            // 
+            // newFirstnameText
+            // 
+            this.newFirstnameText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newFirstnameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.newFirstnameText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.newFirstnameText.ForeColor = System.Drawing.Color.Gainsboro;
+            this.newFirstnameText.Location = new System.Drawing.Point(387, 171);
+            this.newFirstnameText.Name = "newFirstnameText";
+            this.newFirstnameText.Size = new System.Drawing.Size(220, 28);
+            this.newFirstnameText.TabIndex = 8;
             // 
             // signupLabel
             // 
@@ -337,99 +423,14 @@
             this.newUsernameText.Size = new System.Drawing.Size(220, 28);
             this.newUsernameText.TabIndex = 0;
             // 
-            // newFirstnameText
-            // 
-            this.newFirstnameText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newFirstnameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.newFirstnameText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.newFirstnameText.ForeColor = System.Drawing.Color.Gainsboro;
-            this.newFirstnameText.Location = new System.Drawing.Point(387, 171);
-            this.newFirstnameText.Name = "newFirstnameText";
-            this.newFirstnameText.Size = new System.Drawing.Size(220, 28);
-            this.newFirstnameText.TabIndex = 8;
-            // 
-            // newLastnameText
-            // 
-            this.newLastnameText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newLastnameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.newLastnameText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.newLastnameText.ForeColor = System.Drawing.Color.Gainsboro;
-            this.newLastnameText.Location = new System.Drawing.Point(387, 205);
-            this.newLastnameText.Name = "newLastnameText";
-            this.newLastnameText.Size = new System.Drawing.Size(220, 28);
-            this.newLastnameText.TabIndex = 9;
-            // 
-            // newEmailText
-            // 
-            this.newEmailText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newEmailText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.newEmailText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.newEmailText.ForeColor = System.Drawing.Color.Gainsboro;
-            this.newEmailText.Location = new System.Drawing.Point(387, 240);
-            this.newEmailText.Name = "newEmailText";
-            this.newEmailText.Size = new System.Drawing.Size(220, 28);
-            this.newEmailText.TabIndex = 10;
-            // 
-            // newPasswordText
-            // 
-            this.newPasswordText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newPasswordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.newPasswordText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.newPasswordText.ForeColor = System.Drawing.Color.Gainsboro;
-            this.newPasswordText.Location = new System.Drawing.Point(387, 274);
-            this.newPasswordText.Name = "newPasswordText";
-            this.newPasswordText.PasswordChar = '•';
-            this.newPasswordText.Size = new System.Drawing.Size(220, 28);
-            this.newPasswordText.TabIndex = 11;
-            // 
-            // newFirstnameLabel
-            // 
-            this.newFirstnameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newFirstnameLabel.AutoSize = true;
-            this.newFirstnameLabel.Location = new System.Drawing.Point(276, 173);
-            this.newFirstnameLabel.Name = "newFirstnameLabel";
-            this.newFirstnameLabel.Size = new System.Drawing.Size(102, 24);
-            this.newFirstnameLabel.TabIndex = 12;
-            this.newFirstnameLabel.Text = "First name";
-            // 
-            // newLastnameLabel
-            // 
-            this.newLastnameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newLastnameLabel.AutoSize = true;
-            this.newLastnameLabel.Location = new System.Drawing.Point(276, 208);
-            this.newLastnameLabel.Name = "newLastnameLabel";
-            this.newLastnameLabel.Size = new System.Drawing.Size(99, 24);
-            this.newLastnameLabel.TabIndex = 13;
-            this.newLastnameLabel.Text = "Last name";
-            // 
-            // newEmailLabel
-            // 
-            this.newEmailLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newEmailLabel.AutoSize = true;
-            this.newEmailLabel.Location = new System.Drawing.Point(276, 242);
-            this.newEmailLabel.Name = "newEmailLabel";
-            this.newEmailLabel.Size = new System.Drawing.Size(66, 24);
-            this.newEmailLabel.TabIndex = 14;
-            this.newEmailLabel.Text = "E-mail";
-            // 
-            // newPasswordLabel
-            // 
-            this.newPasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newPasswordLabel.AutoSize = true;
-            this.newPasswordLabel.Location = new System.Drawing.Point(276, 276);
-            this.newPasswordLabel.Name = "newPasswordLabel";
-            this.newPasswordLabel.Size = new System.Drawing.Size(93, 24);
-            this.newPasswordLabel.TabIndex = 15;
-            this.newPasswordLabel.Text = "Password";
-            // 
             // LoginForm
             // 
+            this.AcceptButton = this.loginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(914, 506);
             this.Controls.Add(this.signupPanel);
-            this.Controls.Add(this.passResetPanel);
             this.Controls.Add(this.loginPanel);
             this.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gainsboro;
