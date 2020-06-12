@@ -163,16 +163,13 @@ namespace Verstoppertje_App.Forms
 
         private void helpMenuButton_Click(object sender, EventArgs e)
         {
-            if (activeUser != 0)
+            if (gameInProgress != true)
             {
-                if (gameInProgress != true)
-                {
-                    // ...
-                }
-                else
-                {
-                    MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+                ChangeContentForm(new HelpForm());
+            }
+            else
+            {
+                MessageBox.Show("You cannot visit another tab while in a game!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
