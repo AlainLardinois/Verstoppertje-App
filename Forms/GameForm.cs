@@ -41,6 +41,7 @@ namespace Verstoppertje_App.Forms
         {
             Program.form.SetGameInProgress(true);
             difficultyBoxLabel.Text = difficultyBox.SelectedItem.ToString();
+            int scene = 1;
             if (timeBox.SelectedIndex == 0)
             {
                 minutes = 5;
@@ -56,32 +57,33 @@ namespace Verstoppertje_App.Forms
             if (difficultyBox.SelectedIndex == 0)
             {
                 currentHidingLocation = "Bedroom1";
+                scene = 1;
                 maxClicks = 4;
                 score = 100;
             }
             else if (difficultyBox.SelectedIndex == 1)
             {
                 currentHidingLocation = "Bathroom";
+                scene = 2;
                 maxClicks = 3;
                 score = 200;
             }
             else if (difficultyBox.SelectedIndex == 2)
             {
                 currentHidingLocation = "Storage";
+                scene = 3;
                 maxClicks = 2;
                 score = 300;
             }
             clicksLabel.Text = (maxClicks - clicks).ToString();
-            loadingPanel.Visible = true;
-            setupPanel.Visible = false;
-            Task.Delay(2000);
             gamePanel.Visible = true;
-            loadingPanel.Visible = false;
+            setupPanel.Visible = false;
             start = DateTime.Now;
             gameTimer.Start();
             api = new DomoticzAPI(start);
             getLogThread = new Thread(api.GetLogs);
             getLogThread.Start();
+            api.ToggleScene(scene);
         }
 
         private void gameTimer_Tick(object sender, EventArgs e)
