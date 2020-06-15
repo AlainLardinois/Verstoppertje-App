@@ -89,6 +89,12 @@
       <DependentUpon>ShopForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\GameRole.cs" />
+    <Compile Include="Model\LeaderBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\LeaderBoardForm.Designer.cs">
+      <DependentUpon>LeaderBoardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\UserScore.cs" />
     <Compile Include="Model\UserType.cs" />
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ShopForm.resx">
       <DependentUpon>ShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\LeaderBoardForm.resx">
+      <DependentUpon>LeaderBoardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

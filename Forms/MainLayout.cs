@@ -76,7 +76,7 @@ namespace Verstoppertje_App.Forms
             {
                 if (gameInProgress != true)
                 {
-                    // ...
+                    ResetView();
                 }
                 else
                 {
@@ -102,7 +102,7 @@ namespace Verstoppertje_App.Forms
             {
                 if (gameInProgress != true)
                 {
-                    // ...
+                    ChangeContentForm(new LeaderBoardForm());
                 }
                 else
                 {
