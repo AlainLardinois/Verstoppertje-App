@@ -117,14 +117,76 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MrProg_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture\MrProg_Icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gameText.Text" xml:space="preserve">
+    <value>Before you can start a game you need to apply the following settings
+
+GAME TIME
+the amount of time you want to play the game, your choices exist out of the following:
+- 5 minutes
+- 10 minutes
+- 15 minutes 
+
+DIFFICULTY
+Each game has its own mode which you can choose from, these are:
+- Easy Mode
+- Medium Mode
+- Hard Mode
+
+CREDITS
+Each game a certain amount of credits can be earned which will be added to your account. You can win credits by playing each round on a certain time and difficulty.
+Per second the timer counts down you lose 0.3 credits of a total amount based on the preselected difficulty mode. 
+
+Each mode gives you a certain amount of credits, these being:
+- Easy mode = 100 credits
+- Medium Mode = 150 credits
+- Hard mode = 200 credits
+
+Credits can be spent in the in-game shop for items you can use during a game.</value>
   </data>
-  <data name="maxresdefault2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture\maxresdefault2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopText.Text" xml:space="preserve">
+    <value>Inside the item shop you can spend you hard earned game credits for items you can use in game.
+
+CAMERA POWER-UP
+Enables the camera’s so you can look around the in game map.
+
+COMPASS POWER-UP
+Enables the compass giving you a direction where the hider may be located.
+
+AUDIO POWER-UP
+Enables access to the audio meters which give hints for hidden locations.
+
+EMP POWER-UP
+Disables the hiders personal ability’s during the current round.
+
+SURGE POWER-UP
+Ability that gives you the power to temporarily see which way the hider went
+
+TIME TRAVEL POWER-UP
+Enables the ability to retrace the path the hider took when the game started.</value>
   </data>
-  <data name="HSonline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture\HSonline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loginText.Text" xml:space="preserve">
+    <value>SIGN UP
+To create a user profile the following steps have to be followed.
+1. Click on “No account? Sign Up”. This will open a new windows in which you can put your personal details.
+2. Press “Create” with this your account will be added to our system.
+3. Login using your newly created account by inputting your Username and Password.
+
+You're all set! Have fun playing!
+
+FORGOT PASSWORD
+This feature is currently not implemented. We appreciate your understanding. As always, we encourage our users to safely store their password in a password manager.</value>
+  </data>
+  <data name="profileText.Text" xml:space="preserve">
+    <value>In the Profile tab you can edit your personal settings, these being:
+- Username
+- First name
+- Last name
+- E-mail
+- Password
+
+Once you've edited your personal settings, click the "Save" button.
+
+PASSWORD
+If you do not want to reset your password, you can simply leave this field empty. Your current password won't be affected.</value>
   </data>
 </root>

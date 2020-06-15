@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Verstoppertje_App.Model
 {
-    class UserScore
+    public class UserScore
     {
         private bool won;
         private GameRole role;

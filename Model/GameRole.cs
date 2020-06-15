@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Verstoppertje_App.Model
 {
-    class GameRole
+    public class GameRole
     {
         private int id;
         private string name;

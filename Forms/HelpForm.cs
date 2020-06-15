@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Verstoppertje_App
+namespace Verstoppertje_App.Forms
 {
-    public partial class Form1 : Form
+    public partial class HelpForm : Form
     {
-        public Form1()
+        public HelpForm()
         {
             InitializeComponent();
         }
