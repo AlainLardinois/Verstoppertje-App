@@ -64,39 +64,25 @@ namespace Verstoppertje_App.DataAccessLayer
                     string password = reader.GetString(5);
                     string email = reader.GetString(6);
                     User tempUser = new User(ID, nickname, firstname, lastname, type, email, password);
-
-                    /*
-                    // Get scores
-                    string score_query = "SELECT * FROM user_score WHERE user_id = " + ID.ToString();
-                    SqlCommand score_cmd = new SqlCommand(score_query, conn);
-                    SqlDataReader score_reader = score_cmd.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        int scoreID = Convert.ToInt32(reader["ID"]);
-                        bool won = Convert.ToBoolean(reader["won"]);
-                        GameRole role = roles.Find(i => i.Id == reader.GetInt32(2));
-                        int score = reader.GetInt32(3);
-                        UserScore tempScore = new UserScore(won, role, score, tempUser);
-                        scores.Add(tempScore);
-
-                        // Add data to user object
-                        if (won)
-                        {
-                            tempUser.Wins = tempUser.Wins += 1;
-                        }
-                        else
-                        {
-                            tempUser.Losses = tempUser.Losses += 1;
-                        }
-                        tempUser.Score += score;
-                    }
-                    score_reader.Close();
-                    score_cmd.Dispose();
-                    */
                     users.Add(tempUser);
                 }
                 reader.Close();
                 cmd.Dispose();
+                // Get scores
+                foreach (var user in users)
+                {
+                    string query = "SELECT * FROM user_score WHERE user_id = " + user.Id.ToString();
+                    cmd = new SqlCommand(query, conn);
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        bool won = reader.GetBoolean(1);
+                        GameRole role = roles.Find(i => i.Id == reader.GetInt32(2));
+                        int score = reader.GetInt32(3);
+                        UserScore tempScore = new UserScore(won, role, score, user);
+                        scores.Add(tempScore);
+                    }
+                }
             }
         }
 
